@@ -1,0 +1,33 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+	"allowSyntheticDefaultImports": true,
+	"sourceMap": true,
+	"esModuleInterop": true,
+	"strict": true,
+	"noEmit": true,
+	"noUnusedParameters": true,
+	"noUnusedLocals": true,
+	"removeComments": true,
+	"noUncheckedIndexedAccess": true,
+	"noPropertyAccessFromIndexSignature": true,
+	"noImplicitReturns": true,
+	"noFallthroughCasesInSwitch": true,
+	"experimentalDecorators": true,
+	"module": "commonjs",
+	"moduleResolution": "node",
+	"target": "es6",
+	"declaration": true,
+	"resolveJsonModule": true,
+	"lib": [
+	  "dom",
+	  "esnext"
+	],
+  },
+  "exclude": [
+	"node_modules",
+	"babel.config.js",
+	"metro.config.js",
+	"jest.config.js"
+  ]
+}
