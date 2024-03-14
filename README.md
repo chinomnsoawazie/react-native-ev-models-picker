@@ -190,6 +190,3 @@ issues, please open an issue or submit a pull request.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-<style>
-.tableContainer {width: 100%}
-</style>
