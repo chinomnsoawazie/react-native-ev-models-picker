@@ -10,7 +10,14 @@ import DropDownPicker from "react-native-dropdown-picker";
 import {ColorValue} from "react-native/Libraries/StyleSheet/StyleSheet";
 import {TextStyle} from "react-native/Libraries/StyleSheet/StyleSheetTypes";
 import {getMakeModels, getModelYears, getYearTrims, translations} from "./helpers";
-import {CarMake, CarModelsType, CarYearsType, ComponentInputItems, evMakes, SupportedLangues} from "./types/evData";
+import {
+	CarMake,
+	CarModelsType,
+	CarYearsType,
+	ComponentInputItems,
+	evMakes,
+	SupportedLangues
+} from "./types/evDataTypes";
 
 type PackageDropDownTypes = {
 	disabled?: boolean;
@@ -175,6 +182,7 @@ const EVSelector = (x: PackageDropDownTypes) => {
 	const hideTrim =
 		optionsLevel === 'CarMake' || optionsLevel === 'CarModel' || optionsLevel === 'CarYear';
 	
+	const sortedEvMakes = evMakes.sort((a, b) => a.label.localeCompare(b.label));
 	
 	return (<SafeAreaView
 		accessibilityLabel={accessibilityLabel}
@@ -201,7 +209,7 @@ const EVSelector = (x: PackageDropDownTypes) => {
 				open={carMakeOpen}
 				closeAfterSelecting
 				value={carMake}
-				items={evMakes}
+				items={sortedEvMakes}
 				setOpen={toggleCarMake}
 				setValue={setCarMake}
 				containerStyle={{
