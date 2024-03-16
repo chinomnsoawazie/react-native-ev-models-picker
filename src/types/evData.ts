@@ -1,206 +1,26 @@
-export type SupportedLangues = "en" | "fr";
-export type TranslationCopy = {
-	carMake: string;
-	carModel: string;
-	carYear: string;
-	carTrim: string;
-};
-export type CarMake = "Telsa" | "Rivian" | "Ford" | "Others" | 'none'
+import {
+	FordModelsItem,
+	HyundaiModelsItem,
+	MercedesMaybachModelsItem,
+	MiniModelsItem,
+	MitsubishiModelsItem,
+	NissanModelsItem,
+	PolestarModelsItem,
+	PorscheModelsItem,
+	RamModelsItem,
+	RivianModelsItem,
+	RollsRoyceModelsItem,
+	ScoutModelsItem,
+	SmartModelsItem,
+	SubaruModelsItem,
+	TeslaModelsItem,
+	ToyotaModelsItem,
+	VinFastModelsItem,
+	VolkswagenModelsItem,
+	VolvoModelsItem
+} from "./evDataTypes";
 
-type CarMakeItemType = {
-	label?: CarMake;
-	value?: CarMake;
-	disabled?: boolean;
-};
-export const evMakes: CarMakeItemType[] = [
-	{
-		label: "Telsa",
-		value: "Telsa",
-		disabled: false
-	},
-	{
-		label: "Rivian",
-		value: "Rivian",
-		disabled: false
-	},
-	{
-		label: "Ford",
-		value: "Ford",
-		disabled: false
-	},
-	
-	{
-		label: "Others",
-		value: "Others",
-		disabled: false
-	}
-];
-
-
-type TeslaModels =
-	| "Cybertruck"
-	| "Model 3"
-	| "Model S"
-	| "Model X"
-	| "Model Y"
-	| "Tesla Semi";
-export type TeslaTrims =
-	| "100D"
-	| "60 RWD"
-	| "60 kWh"
-	| "60"
-	| "60D"
-	| "70 kWh"
-	| "70"
-	| "70D RWD"
-	| "70D"
-	| "75"
-	| "75D AWD"
-	| "75D"
-	| "85 RWD"
-	| "85 kWh"
-	| "85"
-	| "85D"
-	| "90D AWD"
-	| "90D"
-	| "AWD"
-	| "Base"
-	| "DUAL MOTOR AWD 100 KWH"
-	| "Long Range Plus"
-	| "Long Range"
-	| "Long Range AWD"
-	| "Mid Range"
-	| "P100 AWD"
-	| "P100D"
-	| "P85+"
-	| "P85D AWD"
-	| "P85D"
-	| "P90D AWD"
-	| "P90D"
-	| "PLAID TRI MOTOR AWD 100 KWH"
-	| "Performance"
-	| "Performance AWD"
-	| "Plaid AWD"
-	| "Plaid"
-	| "Plaid+"
-	| "Signature Performance"
-	| "Signature"
-	| "Standard Range"
-	| "Standard Range Plus"
-	| "Standard"
-	| "RWD";
-export type TeslaYears =
-	| "2012"
-	| "2013"
-	| "2014"
-	| "2015"
-	| "2016"
-	| "2017"
-	| "2018"
-	| "2019"
-	| "2020"
-	| "2021"
-	| "2022"
-	| "2023"
-	| "2024";
-
-type RivianModels = "R1T" | "R1S";
-export type RivianYears = "2022" | "2023" | "2024";
-export type RivianTrims =
-	| "Explore Package"
-	| "Adventure Package"
-	| "Launch Edition"
-	| "Adventure Dual-Motor Standard Pack"
-	| "Adventure Dual-Motor Standard+ Pack"
-	| "Adventure Dual-Motor Large Pack"
-	| "Adventure Performance Dual-Motor Large Pack"
-	| "Adventure Performance Dual-Motor Standard+ Pack"
-	| "Launch Edition Quad-Motor Large Pack"
-	| "Adventure Quad-Motor Large Pack"
-	| "Adventure Dual-Motor Max Pack"
-	| "Adventure Performance Dual-Motor Max Pack";
-
-type FordModels = "E-Transit" | "F-150 Lightning" | 'Mustang Mach-E'
-export type FordYears = "2021" | "2022" | "2023" | "2024";
-export type FordTrims =
-	| "Cargo Van"
-	| "Cutaway"
-	| "Chassis Cab"
-	| "XLT"
-	| "XLT Extended Range"
-	| 'Pro'
-	| 'Flash Extended Range'
-	| 'Lariat'
-	| 'Lariat Extended Range'
-	| 'Platinum Extended Range'
-	| "Platinum Black Extended Range"
-	| 'Select'
-	| 'Premium'
-	| 'California Route 1'
-	| 'GT'
-	| 'GT Performance Edition'
-	| 'GT Bronze'
-	| 'Rally'
-
-export type CarYearsType = RivianYears | TeslaYears | FordYears | "none";
-export type CarModelsType = RivianModels | TeslaModels | FordModels | "none";
-export type CarTrimType = RivianTrims | TeslaTrims | FordTrims | "none";
-
-export type Car = {
-	make: CarMake | null;
-	model: CarModelsType | null;
-	trim: CarTrimType | null;
-	year: CarYearsType | null;
-};
-
-export type ComponentInputItems = {
-	carModels: CarMakeModelsForInputItems[];
-	carTrims: CarTrimsForInputType[];
-	carYears: CarYearsForInputItems[];
-};
-export type TeslaModelYearTrims = {
-	year: TeslaYears;
-	trims: TeslaTrims[];
-};
-export type RivianModelYearTrims = {
-	year: RivianYears;
-	trims: RivianTrims[];
-};
-export type FordModelYearTrims = {
-	year: FordYears;
-	trims: FordTrims[];
-};
-
-type TeslaMakes = {
-	model: TeslaModels;
-	yearTrims: TeslaModelYearTrims[];
-};
-
-type RivianMakes = {
-	model: RivianModels;
-	yearTrims: RivianModelYearTrims[];
-};
-
-type FordMakes = {
-	model: FordModels;
-	yearTrims: FordModelYearTrims[];
-};
-
-export type CarModelYearTrims = TeslaModelYearTrims[] | RivianModelYearTrims[];
-export type CarMakeModelsForInputItems = {
-	label: CarModelsType;
-	value: CarModelsType;
-};
-export type CarYearsForInputItems = {
-	label: CarYearsType;
-	value: CarYearsType;
-};
-export type CarTrimsForInputType = {
-	label: CarTrimType;
-	value: CarTrimType;
-};
-
-export const teslaModels: TeslaMakes[] = [
+export const teslaModels: TeslaModelsItem[] = [
 	{
 		model: "Model S",
 		yearTrims: [
@@ -272,15 +92,15 @@ export const teslaModels: TeslaMakes[] = [
 			},
 			{
 				year: "2022",
-				trims: ["Long Range", "Plaid"]
+				trims: ["Long Range", "Plaid", 'Model S', 'Model S Plaid']
 			},
 			{
 				year: "2023",
-				trims: ["AWD", "Standard Range", "Plaid"]
+				trims: ["AWD", "Standard Range", "Plaid", 'Long Range']
 			},
 			{
 				year: "2024",
-				trims: ["AWD", "Plaid AWD"]
+				trims: ["AWD", "Plaid AWD", 'Plaid', 'Model S', "Long Range"]
 			}
 		]
 	},
@@ -322,15 +142,15 @@ export const teslaModels: TeslaMakes[] = [
 			
 			{
 				year: "2022",
-				trims: ["Long Range", "Plaid"]
+				trims: ["Long Range", "Plaid", "Model X", "Model X Plaid"]
 			},
 			{
 				year: "2023",
-				trims: ["Standard Range", "Plaid", "AWD"]
+				trims: ["Standard Range", "Plaid", "AWD", 'Model X Plaid', 'Long Range']
 			},
 			{
 				year: "2024",
-				trims: ["Plaid", "AWD"]
+				trims: ["Plaid", "AWD", 'Model X', 'Long Range']
 			}
 		]
 	},
@@ -365,9 +185,9 @@ export const teslaModels: TeslaMakes[] = [
 				year: "2021",
 				trims: ["Standard Range Plus", "Long Range", "Performance"]
 			},
-			{year: "2022", trims: ["Base", "Long Range", "Performance"]},
-			{year: "2023", trims: ["RWD", "Long Range AWD", "Performance AWD"]},
-			{year: "2024", trims: ["RWD", "Long Range AWD"]}
+			{year: "2022", trims: ["Base", "RWD", "Long Range", "Performance"]},
+			{year: "2023", trims: ["RWD", "Long Range AWD", "Performance AWD", 'Standard Range RWD', 'Long Range']},
+			{year: "2024", trims: ["Standard Range RWD", 'RWD', "Long Range AWD", 'Performance']}
 		]
 	},
 	{
@@ -387,17 +207,35 @@ export const teslaModels: TeslaMakes[] = [
 			},
 			{
 				year: "2023",
-				trims: ["Long Range AWD", "Performance AWD", "AWD", "RWD"]
+				trims: ["Long Range AWD", "Performance AWD", "AWD", "RWD", 'Standard Range', "Long Range", "Performance"]
 			},
 			{
 				year: "2024",
-				trims: ["Long Range AWD", "Performance AWD", "RWD"]
+				trims: ["Long Range AWD", "Performance AWD", "RWD", 'Standard Range RWD']
+			}
+		]
+	},
+	{
+		model: 'Roadster',
+		yearTrims: [
+			{
+				year: "2026",
+				trims: ["Base", "Founder's Edition"]
+			}
+		]
+	},
+	{
+		model: 'Cybertruck',
+		yearTrims: [
+			{
+				year: "2024",
+				trims: ["Beast", "Dual Motor"]
 			}
 		]
 	}
 ];
 
-export const rivianModels: RivianMakes[] = [
+export const rivianModels: RivianModelsItem[] = [
 	{
 		model: "R1S",
 		yearTrims: [
@@ -467,10 +305,37 @@ export const rivianModels: RivianMakes[] = [
 				]
 			}
 		]
+	},
+	{
+		model: 'R2',
+		yearTrims: [
+			{
+				year: "2026",
+				trims: ["Adventure", "Adventure All-Terrain", "Launch Edition"]
+			}
+		]
+	},
+	{
+		model: 'R3',
+		yearTrims: [
+			{
+				year: "2027",
+				trims: ["R3", "R3X"]
+			}
+		]
+	},
+	{
+		model: 'Commercial Van',
+		yearTrims: [
+			{
+				year: "2024",
+				trims: ["Delivery 500", 'Delivery 700']
+			}
+		]
 	}
 ];
 
-export const fordModels: FordMakes[] = [
+export const fordModels: FordModelsItem[] = [
 	{
 		model: "E-Transit",
 		yearTrims: [
@@ -527,3 +392,1151 @@ export const fordModels: FordMakes[] = [
 		]
 	}
 ];
+
+export const hyundaiModels: HyundaiModelsItem[] = [
+	{
+		model: 'Ioniq 5',
+		yearTrims: [
+			{
+				year: '2022',
+				trims: [
+					'SE Standard Range',
+					'SE Long Range',
+					'SEL Long Range',
+					'SEL Long Range AWD',
+					"Limited Long Range",
+					"Limited Long Range AWD"]
+			},
+			{
+				year: '2023',
+				trims: ['SE', 'SEL', 'Limited']
+			}, {
+				year: '2024',
+				trims: ['SE', 'SEL', 'Limited']
+			}, {
+				year: '2025',
+				trims: ['SE', 'SEL', 'N Line', 'Limited']
+				
+			}]
+	},
+	{
+		model: 'Ioniq 5 N',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: ['Ioniq 5 N']
+			}
+		]
+	},
+	{
+		model: 'Ioniq 6',
+		yearTrims: [
+			{
+				year: '2023',
+				trims: ['SE Standard Range', "SE Long Range", "SEL", "Limited"]
+			},
+			{
+				year: '2024',
+				trims: ['SE Standard Range', "SE Long Range", "SEL", "Limited"]
+			}
+		]
+	},
+	{
+		model: 'Ioniq 7',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: ['SE', "SEL", "Limited"]
+			}
+		]
+	},
+	{
+		model: 'Kona',
+		yearTrims: [
+			{
+				year: '2019',
+				trims: ["Kona"]
+			},
+			{
+				year: '2020',
+				trims: ["SEL", "Limited", "Ultimate"]
+			},
+			{
+				year: '2021',
+				trims: ["SEL", "Limited", "Ultimate"]
+			},
+			{
+				year: '2022',
+				trims: ["SEL", "Limited"]
+			}, {
+				year: '2023',
+				trims: ["SE", "SEL", "Limited"]
+			}, {
+				year: '2024',
+				trims: ["SE", "SEL", "Limited"]
+			}
+		
+		]
+	}, {
+		model: 'Nexo',
+		yearTrims: [
+			{
+				year: '2019',
+				trims: ["Nexo"]
+			},
+			{
+				year: '2020',
+				trims: ["Blue", "Limited"]
+			},
+			{
+				year: '2021',
+				trims: ["Blue", "Limited"]
+			},
+			{
+				year: '2022',
+				trims: ["Blue", "Limited"]
+			},
+			{
+				year: '2023',
+				trims: ["Blue", "Limited"]
+			},
+			{
+				year: '2024',
+				trims: ["Blue", "Limited"]
+			}
+		]
+	},
+	{
+		model: 'Ioniq Electric',
+		yearTrims: [
+			{
+				year: '2020',
+				trims: ["SE", "Limited"]
+			},
+			{
+				year: '2021',
+				trims: ["SE", "Limited"]
+			}
+		]
+	}
+]
+
+export const volvoModels: VolvoModelsItem[] = [
+	{
+		model: 'EC40',
+		yearTrims: [
+			{
+				year: '2022',
+				trims: ['Ultimate']
+			},
+			{
+				year: '2023',
+				trims: ['Core', 'Plus', 'Ultimate']
+			},
+			{
+				year: '2024',
+				trims: [
+					'Single Motor Core',
+					'Twin Motor Core',
+					'Single Motor Plus',
+					'Twin Motor Plus',
+					'Single Motor Ultimate',
+					'Twin Motor Ultimate'
+				]
+			},
+			{
+				year: '2025',
+				trims: [
+					'Single Motor Core',
+					'Twin Motor Core',
+					'Single Motor Plus',
+					'Twin Motor Plus',
+					'Single Motor Ultimate',
+					'Twin Motor Ultimate'
+				]
+			}
+		]
+	},
+	{
+		model: 'ES90',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'Single Motor',
+					'Single Motor Performance',
+					"Twin Motor",
+					"Twin Motor Ultimate"
+				]
+			}
+		]
+	},
+	{
+		model: 'EX30',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Core Single Motor',
+					'Plus Single Motor',
+					"Ultra Single Motor",
+					"Plus Twin Motor",
+					'Ultra Twin Motor'
+				]
+			}
+		]
+	},
+	{
+		model: 'EX40',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Single Motor Core',
+					'Twin Motor Core',
+					"Single Motor Plus",
+					"Twin Motor Plus",
+					'Single Motor Ultimate'
+				]
+			}
+		
+		]
+	},
+	{
+		model: 'XC40',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Single Motor Core',
+					'Twin Motor Core',
+					"Single Motor Plus",
+					"Twin Motor Plus",
+					'Single Motor Ultimate',
+					'Twin Motor Ultimate'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Twin',
+					'Twin Plus',
+					"Twin Ultimate"
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'Twin',
+					'Twin Plus',
+					"Twin Ultimate"
+				]
+			}
+		]
+	},
+	{
+		model: 'XC40 Recharge',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Single Motor Core',
+					'Twin Motor Core',
+					"Single Motor Plus",
+					"Twin Motor Plus",
+					'Single Motor Ultimate'
+				]
+			},
+			{
+				year: '2024',
+				trims: [
+					'Single Motor Core',
+					'Twin Motor Core',
+					"Single Motor Plus",
+					"Twin Motor Plus",
+					'Single Motor Ultimate',
+					'Twin Motor Ultimate'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Twin',
+					'Twin Plus',
+					"Twin Ultimate"
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'Twin',
+					'Twin Plus',
+					"Twin Ultimate"
+				]
+			},
+			{
+				year: '2021',
+				trims: [
+					'XC40 Recharge'
+				]
+			}
+		]
+	},
+	{
+		model: 'EX90',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Twin Motor Plus',
+					'Twin Motor Ultra',
+					"Twin Motor Performance Plus"
+				]
+			}
+		]
+	}
+]
+
+export const volkswagenModels: VolkswagenModelsItem[] = [
+	{
+		model: 'ID.4',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Standard',
+					'Standard S',
+					'Pro',
+					'Pro S',
+					'Pro S Plus'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Standard',
+					'Standard S',
+					'Pro',
+					'Pro S',
+					'Pro S Plus'
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'Pro',
+					'Pro S'
+				]
+			},
+			{
+				year: '2021',
+				trims: [
+					'Pro',
+					'Pro S',
+					'1st Edition'
+				]
+			}
+		]
+	},
+	{
+		model: 'ID.7',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Base',
+					'Pro',
+					'Pro S',
+					'Pro S Plus'
+				]
+			}
+		]
+	},
+	{
+		model: 'ID.8',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'Base',
+					'Pro',
+					'Pro S'
+				]
+			}
+		]
+	},
+	{
+		model: 'ID.Buzz Microbus',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'ID.Buzz'
+				]
+			}
+		]
+	},
+	{
+		model: 'e-Golf',
+		yearTrims: [
+			{
+				year: '2017',
+				trims: [
+					'SE',
+					'SEL',
+					'Limited Edition'
+				]
+			},
+			{
+				year: '2018',
+				trims: [
+					'SE',
+					'SEL',
+					'SEL Premium'
+				]
+			},
+			{
+				year: '2019',
+				trims: [
+					'SE',
+					'SEL Premium'
+				]
+			}
+		]
+	}
+]
+
+export const vinFastModels: VinFastModelsItem[] = [
+	{
+		model: 'VF3',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'VF3'
+				]
+			}
+		]
+		
+	},
+	{
+		model: 'VF6',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Eco',
+					'Plus'
+				]
+			}
+		]
+	},
+	{
+		model: 'VF7',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Eco',
+					'Plus'
+				]
+			}
+		]
+	},
+	{
+		model: 'VF8',
+		yearTrims: [
+			{
+				year: '2023',
+				trims: [
+					'City Edition Eco',
+					'City Edition Plus'
+				]
+			},
+			{
+				year: '2024',
+				trims: [
+					'Eco',
+					'Plus'
+				]
+			}
+		]
+	},
+	{
+		model: 'VF9',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Eco',
+					'Plus'
+				]
+			}
+		]
+	},
+	{
+		model: 'VF Wild',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'VF Wild'
+				]
+			}
+		]
+	}
+]
+
+export const toyotaModels: ToyotaModelsItem[] = [
+	{
+		model: 'bZ3X',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'XLE',
+					'Limited'
+				]
+			}
+		]
+	},
+	{
+		model: 'bZ4X',
+		yearTrims: [
+			{
+				year: '2023',
+				trims: [
+					'XLE',
+					'Limited'
+				]
+			},
+			{
+				year: '2024',
+				trims: [
+					'XLE',
+					'Limited'
+				]
+			}
+		]
+	},
+	{
+		model: 'bZ5X',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'XLE',
+					'Limited'
+				]
+			}
+		]
+	},
+	{
+		model: 'Compact Cruiser EV',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'XLE',
+					'Limited',
+					'LE'
+				]
+			}
+		]
+	},
+	{
+		model: 'Tacoma Electric',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'SR5',
+					'Limited',
+					'TRD Off-Road'
+				]
+			}
+		]
+	}
+]
+
+export const scoutModels: ScoutModelsItem[] = [
+	{
+		model: 'SUV',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'SUV'
+				]
+			}
+		]
+	},
+	{
+		model: 'Pickup',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'Pickup'
+				]
+			}
+		]
+	}
+]
+
+export const subaruModels: SubaruModelsItem[] = [
+	{
+		model: 'Solterra',
+		yearTrims: [
+			{
+				year: '2023',
+				trims: [
+					'Premium',
+					'Limited',
+					'Touring'
+				]
+			}
+		]
+	}
+]
+
+export const smartModels: SmartModelsItem[] = [{
+	model: 'EQ Fortwo',
+	yearTrims: [
+		{
+			year: '2018',
+			trims: [
+				'EQ Fortwo'
+			]
+		}
+	]
+}]
+
+export const rollsRoyceModels: RollsRoyceModelsItem[] = [
+	{
+		model: 'Spectre',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Spectre'
+				]
+			}
+		]
+	}
+]
+
+export const ramModels: RamModelsItem[] = [
+	{
+		model: '1500 EV',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Tradesman',
+					'Big Horn',
+					'Laramie',
+					'Rebel',
+					'Longhorn',
+					'Limited',
+					'Tungsten'
+				]
+			}
+		]
+	},
+	{
+		model: 'ProMaster EV',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'High Roof',
+					'Super High Roof'
+				]
+			}
+		]
+	}
+
+]
+
+export const porscheModels: PorscheModelsItem[] = [
+	{
+		model: '718 EV',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Base',
+					'S',
+					'GTS'
+				]
+			}
+		]
+	},
+	{
+		model: 'Cayenne EV',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'Cayenne EV',
+					'Cayenne EV S',
+					'Cayenne EV GTS'
+				]
+			}
+		]
+	},
+	{
+		model: 'Macan EV',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'4',
+					'Turbo'
+				]
+			}
+		]
+	},
+	{
+		model: 'Taycan',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Taycan',
+					'4S',
+					'Turbo',
+					'Turbo S',
+					'Turbo GT'
+				
+				]
+			},
+			{
+				year: '2024',
+				trims: [
+					'Base',
+					'4S',
+					'Turbo',
+					'Turbo S',
+					'GTS'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Base',
+					'4S',
+					'Turbo',
+					'Turbo S',
+					'GTS'
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'Base',
+					'4S',
+					'Turbo',
+					'Turbo S',
+					'GTS'
+				]
+			},
+			{
+				year: '2021',
+				trims: [
+					'Base',
+					'4S',
+					'Turbo',
+					'Turbo S'
+				]
+			},
+			{
+				year: '2020',
+				trims: [
+					'4S',
+					'Turbo',
+					'Turbo S'
+				]
+			}
+		]
+	},
+	{
+		model: 'Taycan Cross Turismo',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'4',
+					'4S',
+					'Turbo',
+					'Turbo S'
+				]
+			},
+			{
+				year: '2024',
+				trims: [
+					'Cross Turismo 4',
+					'Cross Turismo 4S',
+					'Sport Turismo GTS',
+					'Cross Turismo Turbo',
+					'Cross Turismo Turbo S'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Taycan Cross Turismo 4',
+					'Taycan Cross Turismo 4S',
+					'Taycan Sport Turismo GTS',
+					'Taycan Cross Turismo Turbo',
+					'Taycan Cross Turismo Turbo S'
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'4',
+					'4S',
+					'GTS Sport Turismo',
+					'Turbo',
+					'Turbo S'
+				]
+			},
+			{
+				year: '2021',
+				trims: [
+					'4',
+					'4S',
+					'Turbo',
+					'Turbo S'
+				]
+			}
+		]
+	}
+]
+
+export const polestarModels: PolestarModelsItem[] = [
+	{
+		model: '2',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Long Range RWD',
+					'Long Range AWD',
+					'Long Range with Performance Pack'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Single Motor',
+					'Dual Motor',
+					'Single Motor Plus',
+					'Dual Motor Plus',
+					'Dual Motor Performance',
+					'Dual Motor Performance Plus',
+					'BST Edition 270'
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'Single Motor',
+					'Dual Motor'
+				]
+			},
+			{
+				year: '2021',
+				trims: [
+					'Launch Edition',
+					'Performance Package'
+				]
+			}
+		]
+	},
+	{
+		model: '5',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Base'
+				]
+			}
+		]
+	},
+	{
+		model: '6',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'Dual Motor'
+				]
+			}
+		]
+	},
+	{
+		model: '1',
+		yearTrims: [
+			{
+				year: '2020',
+				trims: [
+					'Polestar 1'
+				]
+			},
+			{
+				year: '2021',
+				trims: [
+					'Polestar 1'
+				]
+			}
+		]
+	},
+	{
+		model: '4',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Single Motor',
+					"Dual Motor"
+				]
+			}
+		]
+	},
+	{
+		model: '3',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Long Range Dual Motor',
+					'Long Range Dual Motor Performance'
+				]
+			}
+		]
+	}
+]
+
+export const nissanModels: NissanModelsItem[] = [
+	{
+		model: 'Leaf',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'S',
+					'SV Plus'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'S',
+					'SV Plus'
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'S',
+					'SV',
+					'S Plus',
+					'SV Plus',
+					'SL Plus'
+				]
+			},
+			{
+				year: '2021',
+				trims: [
+					'S',
+					'SV',
+					'S Plus',
+					'SV Plus',
+					'SL Plus'
+				]
+			},
+			{
+				year: '2020',
+				trims: [
+					'S',
+					'SV',
+					'S Plus',
+					'SV Plus',
+					'SL Plus'
+				]
+			},
+			{
+				year: '2019',
+				trims: [
+					'S',
+					'SL',
+					'SV',
+					'S Plus',
+					'SV Plus',
+					'SL Plus'
+				]
+			},
+			{
+				year: '2018',
+				trims: [
+					'S',
+					'SL',
+					'SV'
+				]
+			},
+			{
+				year: '2017',
+				trims: [
+					'S',
+					'SL',
+					'SV'
+				]
+			}
+		]
+	},
+	{
+		model: 'Ariya',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Engage',
+					'Venture+',
+					'Evolve+',
+					'Engage+',
+					'Empower+',
+					'Platinum+'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Engage',
+					'Engage e-4ORCE',
+					'Venture+',
+					'Evolve+',
+					'Engage+ e-4ORCE',
+					'Evolve+ e-4ORCE',
+					'Premiere',
+					'Platinum+ e-4ORCE'
+				]
+			}
+		]
+	}
+]
+
+export const mitsubishiModels: MitsubishiModelsItem[] = [
+	{
+		model: 'i-MiEV',
+		yearTrims: [
+			{
+				year: '2017',
+				trims: [
+					'i-MiEV'
+				]
+			}
+		]
+	}
+]
+
+export const miniModels: MiniModelsItem[] = [
+	{
+		model: 'Countryman Electric',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Countryman S E All4'
+				]
+			}
+		]
+	},
+	{
+		model: 'Cooper Electric',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Cooper E Classic',
+					'Cooper SE Classic',
+					'Cooper E Signature',
+					'Cooper SE Signature',
+					'Cooper E Iconic',
+					"Cooper SE Iconic"
+				]
+			},
+			{
+				year: '2024',
+				trims: [
+					'Classic',
+					'Signature',
+					'Iconic'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Signature',
+					'Signature Plus',
+					'Iconic'
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'Signature',
+					'Signature Plus',
+					'Iconic'
+				]
+			},
+			{
+				year: '2021',
+				trims: [
+					'Signature',
+					'Signature Plus',
+					'Iconic'
+				]
+			},
+			{
+				year: '2020',
+				trims: [
+					'Signature',
+					'Signature Plus',
+					'Iconic'
+				]
+			}
+		]
+	},
+	{
+		model: 'Aceman',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Classic',
+					'Iconic',
+					'Signature'
+				]
+			}
+		]
+	}
+]
+
+export const mercedesMaybachModels: MercedesMaybachModelsItem[] = [
+	{
+		model: 'EQS SUV',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'EQS680',
+					'EQS680 Night Series'
+				]
+			}
+		]
+	}
+]
