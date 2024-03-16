@@ -51,18 +51,14 @@ import {View} from 'react-native';
 
 const App = () => {
 	const [selectedEV, setSelectedEV] = useState(null);
-	
 	return (
 		<View>
-			<EVSelector
-				onValueChange={(value) => setSelectedEV(value)}
-			/>
+		<EVSelector onValueChange={(value) => setSelectedEV(value)}/>
 		</View>
 	);
 };
 
 export default App;
-
 ```
 
 ## Component  API
