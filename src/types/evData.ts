@@ -5,7 +5,7 @@ export type TranslationCopy = {
 	carYear: string;
 	carTrim: string;
 };
-export type CarMake = "Telsa" | "Rivian" | "Others" | 'none'
+export type CarMake = "Telsa" | "Rivian" | "Ford" | "Others" | 'none'
 
 type CarMakeItemType = {
 	label?: CarMake;
@@ -23,6 +23,11 @@ export const evMakes: CarMakeItemType[] = [
 		value: "Rivian",
 		disabled: false
 	},
+	{
+		label: "Ford",
+		value: "Ford",
+		disabled: false
+	},
 	
 	{
 		label: "Others",
@@ -30,22 +35,7 @@ export const evMakes: CarMakeItemType[] = [
 		disabled: false
 	}
 ];
-export type CarYearsType = RivianYears | TeslaYears | "none";
-export type CarModelsType = RivianModels | TeslaModels | "none";
-export type CarTrimType = RivianTrims | TeslaTrims | "none";
 
-export type Car = {
-	make: CarMake | null;
-	model: CarModelsType | null;
-	trim: CarTrimType | null;
-	year: CarYearsType | null;
-};
-
-export type ComponentInputItems = {
-	carModels: CarMakeModelsForInputItems[];
-	carTrims: CarTrimsForInputType[];
-	carYears: CarYearsForInputItems[];
-};
 
 type TeslaModels =
 	| "Cybertruck"
@@ -129,6 +119,45 @@ export type RivianTrims =
 	| "Adventure Quad-Motor Large Pack"
 	| "Adventure Dual-Motor Max Pack"
 	| "Adventure Performance Dual-Motor Max Pack";
+
+type FordModels = "E-Transit" | "F-150 Lightning" | 'Mustang Mach-E'
+export type FordYears = "2021" | "2022" | "2023" | "2024";
+export type FordTrims =
+	| "Cargo Van"
+	| "Cutaway"
+	| "Chassis Cab"
+	| "XLT"
+	| "XLT Extended Range"
+	| 'Pro'
+	| 'Flash Extended Range'
+	| 'Lariat'
+	| 'Lariat Extended Range'
+	| 'Platinum Extended Range'
+	| "Platinum Black Extended Range"
+	| 'Select'
+	| 'Premium'
+	| 'California Route 1'
+	| 'GT'
+	| 'GT Performance Edition'
+	| 'GT Bronze'
+	| 'Rally'
+
+export type CarYearsType = RivianYears | TeslaYears | FordYears | "none";
+export type CarModelsType = RivianModels | TeslaModels | FordModels | "none";
+export type CarTrimType = RivianTrims | TeslaTrims | FordTrims | "none";
+
+export type Car = {
+	make: CarMake | null;
+	model: CarModelsType | null;
+	trim: CarTrimType | null;
+	year: CarYearsType | null;
+};
+
+export type ComponentInputItems = {
+	carModels: CarMakeModelsForInputItems[];
+	carTrims: CarTrimsForInputType[];
+	carYears: CarYearsForInputItems[];
+};
 export type TeslaModelYearTrims = {
 	year: TeslaYears;
 	trims: TeslaTrims[];
@@ -136,6 +165,10 @@ export type TeslaModelYearTrims = {
 export type RivianModelYearTrims = {
 	year: RivianYears;
 	trims: RivianTrims[];
+};
+export type FordModelYearTrims = {
+	year: FordYears;
+	trims: FordTrims[];
 };
 
 type TeslaMakes = {
@@ -146,6 +179,11 @@ type TeslaMakes = {
 type RivianMakes = {
 	model: RivianModels;
 	yearTrims: RivianModelYearTrims[];
+};
+
+type FordMakes = {
+	model: FordModels;
+	yearTrims: FordModelYearTrims[];
 };
 
 export type CarModelYearTrims = TeslaModelYearTrims[] | RivianModelYearTrims[];
@@ -427,6 +465,64 @@ export const rivianModels: RivianMakes[] = [
 					"Adventure Dual-Motor Max Pack",
 					"Adventure Performance Dual-Motor Max Pack"
 				]
+			}
+		]
+	}
+];
+
+export const fordModels: FordMakes[] = [
+	{
+		model: "E-Transit",
+		yearTrims: [
+			{
+				year: "2022",
+				trims: ["Cutaway", "Chassis Cab", "Cargo Van"]
+			},
+			{
+				year: "2023",
+				trims: ["Cutaway", "Chassis Cab", "Cargo Van"]
+			},
+			{
+				year: "2024",
+				trims: ["Cutaway", "Chassis Cab", "Cargo Van"]
+			}
+		]
+	},
+	{
+		model: "F-150 Lightning",
+		yearTrims: [
+			{
+				year: "2022",
+				trims: ["Pro", "XLT", "Lariat", 'XLT Extended Range', 'Platinum Extended Range']
+			},
+			{
+				year: "2023",
+				trims: ['Pro', 'XLT', 'Lariat', 'XLT Extended Range', 'Platinum Extended Range']
+			},
+			{
+				year: "2024",
+				trims: ['Pro', 'XLT', 'Flash Extended Range', 'Lariat Extended Range', 'Platinum Extended Range', 'Platinum Black Extended Range']
+			}
+		]
+	},
+	{
+		model: "Mustang Mach-E",
+		yearTrims: [
+			{
+				year: "2021",
+				trims: ["Select", "Premium", "California Route 1", 'GT', 'GT Performance Edition']
+			},
+			{
+				year: "2022",
+				trims: ['Select', 'Premium', 'California Route 1', 'GT', 'GT Performance Edition']
+			},
+			{
+				year: "2023",
+				trims: ['Select', 'Premium', 'California Route 1', 'GT', 'GT Performance Edition']
+			},
+			{
+				year: "2024",
+				trims: ['Select', 'Premium', 'GT', 'GT Performance Edition', 'GT Bronze', 'Rally']
 			}
 		]
 	}
