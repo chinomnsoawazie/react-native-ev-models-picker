@@ -25,6 +25,20 @@ export type CarMake =
 	| 'Mitsubishi'
 	| 'Mini'
 	| 'Mercedes-Maybach'
+	| 'Mercedes-Benz'
+	| 'Mercedes-AMG'
+	| 'Mazda'
+	| 'Maserati'
+	| "Lucid"
+	| 'Lotus'
+	| 'Lordstown'
+	| 'Lincoln'
+	| 'Lexus'
+	| 'Land Rover'
+	| 'Lamborghini'
+	| 'Kia'
+	| 'Jeep'
+	| 'Jaguar'
 	| "Others"
 	| 'none'
 
@@ -127,6 +141,76 @@ export const evMakes: CarMakeItemType[] = [
 	{
 		label: "Mercedes-Maybach",
 		value: "Mercedes-Maybach",
+		disabled: false
+	},
+	{
+		label: "Mercedes-Benz",
+		value: "Mercedes-Benz",
+		disabled: false
+	},
+	{
+		label: "Mercedes-AMG",
+		value: "Mercedes-AMG",
+		disabled: false
+	},
+	{
+		label: "Mazda",
+		value: "Mazda",
+		disabled: false
+	},
+	{
+		label: "Maserati",
+		value: "Maserati",
+		disabled: false
+	},
+	{
+		label: "Lucid",
+		value: "Lucid",
+		disabled: false
+	},
+	{
+		label: "Lotus",
+		value: "Lotus",
+		disabled: false
+	},
+	{
+		label: "Lordstown",
+		value: "Lordstown",
+		disabled: false
+	},
+	{
+		label: "Lincoln",
+		value: "Lincoln",
+		disabled: false
+	},
+	{
+		label: "Lexus",
+		value: "Lexus",
+		disabled: false
+	},
+	{
+		label: "Land Rover",
+		value: "Land Rover",
+		disabled: false
+	},
+	{
+		label: "Lamborghini",
+		value: "Lamborghini",
+		disabled: false
+	},
+	{
+		label: "Kia",
+		value: "Kia",
+		disabled: false
+	},
+	{
+		label: "Jeep",
+		value: "Jeep",
+		disabled: false
+	},
+	{
+		label: "Jaguar",
+		value: "Jaguar",
 		disabled: false
 	},
 	{
@@ -604,6 +688,269 @@ export type MercedesMaybachTrims =
 	| 'EQS680'
 	| 'EQS680 Night Series'
 
+export type MercedesBenzModels =
+	| 'B-Class Electric Drive'
+	| 'eSprinter'
+	| 'EQS SUV'
+	| 'EQS'
+	| 'EQG'
+	| "EQE SUV"
+	| 'EQE'
+	| 'EQB'
+	| 'CLA-Class EV'
+export type MercedesBenzYears =
+	| '2026'
+	| '2025'
+	| '2024'
+	| '2023'
+	| '2022'
+	| '2021'
+	| '2017'
+export type MercedesBenzTrims =
+	| 'Premium'
+	| 'Exclusive'
+	| 'Pinnacle'
+	| 'B-Class'
+	| 'EQB250+ Premium'
+	| 'EQB250+ Exclusive'
+	| 'EQB250+ Pinnacle'
+	| 'EQB300 Premium'
+	| 'EQB300 Exclusive'
+	| 'EQB300 Pinnacle'
+	| 'EQB350 Premium'
+	| 'EQB350 Exclusive'
+	| 'EQB350 Pinnacle'
+	| 'EQE350'
+	| 'EQE350+'
+	| 'EQE350+ Premium'
+	| 'EQE350+ Exclusive'
+	| 'EQE350+ Pinnacle'
+	| 'EQE350 4Matic Premium'
+	| 'EQE350 4Matic Exclusive'
+	| 'EQE350 4Matic Pinnacle'
+	| 'EQE500'
+	| 'EQE500 Premium'
+	| 'EQE500 4Matic Premium'
+	| 'EQE500 4Matic Exclusive'
+	| 'EQE500 4Matic Pinnacle'
+	| 'EQG'
+	| 'EQS450+'
+	| 'EQS450+ Premium'
+	| 'EQS450+ Exclusive'
+	| 'EQS450+ Pinnacle'
+	| 'EQS450 4Matic'
+	| 'EQS450 4Matic Premium'
+	| 'EQS450 4Matic Exclusive'
+	| 'EQS450 4Matic Pinnacle'
+	| 'EQS580 4Matic'
+	| 'EQS580 Premium'
+	| 'EQS580 Exclusive'
+	| 'EQS580 Pinnacle'
+	| 'EQS580 4Matic Premium'
+	| 'EQS580 4Matic Exclusive'
+	| 'EQS580 4Matic Pinnacle'
+	| 'Cargo Van Standard Output'
+	| 'Cargo Van High Output'
+
+export type MercedesAMGModels =
+	| 'EQS'
+	| 'EQE SUV'
+	| 'EQE53'
+export type MercedesAMGYears =
+	| '2024'
+	| '2023'
+	| '2022'
+export type MercedesAMGTrims =
+	| 'Premium'
+	| 'Exclusive'
+	| 'Pinnacle'
+	| 'EQE53'
+	| 'EQE53 Pinnacle'
+	| 'EQE53 Dynamic Plus'
+	| 'EQE53 Dynamic Plus Premium'
+	| 'EQE53 Dynamic Plus Pinnacle'
+
+export type MazdaModels =
+	| 'MX-30'
+export type MazdaYears =
+	| '2023'
+	| '2022'
+export type MazdaTrims =
+	| 'Base'
+	| 'Premium Plus'
+
+export type MaseratiModels =
+	| 'GranTurismo Folgore'
+	| 'Grecale Folgore'
+export type MaseratiYears =
+	| '2024'
+export type MaseratiTrims =
+	| 'Folgore'
+	| 'GT'
+	| 'Modena'
+	| 'Trofeo'
+
+export type LucidModels =
+	| 'Gravity'
+	| 'Air'
+export type LucidYears =
+	| '2025'
+	| '2024'
+	| '2023'
+	| '2022'
+export type LucidTrims =
+	| 'Pure'
+	| 'Pure RWD'
+	| 'Touring'
+	| 'Touring AWD'
+	| 'Dream Edition'
+	| 'Dream Edition Performance'
+	| 'Grand Touring'
+	| 'Grand Touring AWD'
+	| 'Grand Touring Performance'
+	| 'Sapphire'
+
+export type LotusModels =
+	| 'Eletre'
+	| 'Emeya'
+	| 'Evija'
+	| 'Type 135'
+export type LotusYears =
+	| '2028'
+	| '2025'
+	| '2024'
+	| '2023'
+export type LotusTrims =
+	| 'Base'
+	| 'S'
+	| 'R'
+	| 'Evija'
+
+export type LordstownModels =
+	| 'Endurance'
+export type LordstownYears =
+	|'2023'
+export type LordstownTrims =
+	| 'Endurance'
+
+export type LincolnModels =
+	'Star'
+export type LincolnYears =
+	|'2025'
+export type LincolnTrims =
+	| 'Standard'
+	| 'Reserve'
+	| 'Black Label'
+
+export type LexusModels =
+	| 'TZ'
+	| 'RZ'
+	| 'Electrified Sports'
+export type LexusYears =
+	| '2026'
+	| '2025'
+	| '2024'
+	| '2023'
+export type LexusTrims =
+	| 'TZ450e'
+	| 'TZ550e'
+	| 'RZ300e Premium'
+	| 'RZ450e Premium'
+	| 'RZ300e Luxury'
+	| 'RZ450e Luxury'
+	| 'Premium'
+	| 'Luxury'
+	| 'Base'
+
+export type LandRoverModels =
+	| 'Range Rover EV'
+	| 'Defender Sport'
+export type LandRoverYears =
+	| '2027'
+	| '2025'
+export type LandRoverTrims =
+	| 'Base'
+	| 'S'
+	| 'SE'
+	| 'HSE'
+	| 'Autobiography'
+
+export type LamborghiniModels =
+	|'Lanzador'
+export type LamborghiniYears =
+	|'2028'
+export type LamborghiniTrims =
+	|'Lanzador'
+
+export type KiaModels =
+	| 'Niro EV'
+	| 'EV9'
+	| 'EV6'
+	| 'EV5'
+	| 'EV4'
+	| 'EV3'
+export type KiaYears =
+	| '2026'
+	| '2025'
+	| '2024'
+	| '2023'
+	| '2022'
+	| '2021'
+	| '2020'
+export type KiaTrims =
+	| 'Wind'
+	| 'Wind AWD'
+	| 'Wind RWD'
+	| 'Wind e-AWD'
+	| 'Wave'
+	| 'S'
+	| 'EX'
+	| 'EX Premium'
+	| 'Light'
+	| 'Light RWD'
+	| 'Light Standard Range'
+	| 'Light Long Range'
+	| 'Light Long Range RWD'
+	| 'Land'
+	| 'Land e-AWD'
+	| 'GT'
+	| 'GT AWD'
+	| 'GT-Line'
+	| 'GT-Line AWD'
+	| 'GT-Line RWD'
+	| 'GT-Line e-AWD'
+	| 'Limited Edition'
+
+export type JeepModels =
+	| 'Recon EV'
+	| 'Wagoneer S'
+export type JeepYears =
+	| '2025'
+	| '2024'
+export type JeepTrims =
+	| 'Sport'
+	| 'Willys'
+	| 'Rubicon'
+	| 'Sahara'
+	| 'Sahara High Altitude'
+	| 'Series I'
+	| 'Series II'
+	| 'Series III'
+
+export type JaguaModels =
+	| 'I-Pace'
+export type JaguaYears =
+	| '2024'
+	| '2023'
+	| '2022'
+	| '2020'
+	| '2019'
+export type JaguaTrims =
+	| 'I-Pace'
+	| 'S'
+	| 'SE'
+	| 'HSE'
+	| 'R-Dynamic HSE'
 
 export type CarYearsType =
 	| RivianYears
@@ -625,6 +972,20 @@ export type CarYearsType =
 	| MitsubishiYears
 	| MiniYears
 	| MercedesMaybachYears
+	| MercedesBenzYears
+	| MercedesAMGYears
+	| MazdaYears
+	| MaseratiYears
+	| LucidYears
+	| LotusYears
+	| LordstownYears
+	| LincolnYears
+	| LexusYears
+	| LandRoverYears
+	| LamborghiniYears
+	| KiaYears
+	| JeepYears
+	| JaguaYears
 	| "none";
 export type CarModelsType =
 	| RivianModels
@@ -646,6 +1007,20 @@ export type CarModelsType =
 	| MitsubishiModels
 	| MiniModels
 	| MercedesMaybachModels
+	| MercedesBenzModels
+	| MercedesAMGModels
+	| MazdaModels
+	| MaseratiModels
+	| LucidModels
+	| LotusModels
+	| LordstownModels
+	| LincolnModels
+	| LexusModels
+	| LandRoverModels
+	| LamborghiniModels
+	| KiaModels
+	| JeepModels
+	| JaguaModels
 	| "none";
 export type CarTrimType =
 	| RivianTrims
@@ -667,6 +1042,20 @@ export type CarTrimType =
 	| MitsubishiTrims
 	| MiniTrims
 	| MercedesMaybachTrims
+	| MercedesBenzTrims
+	| MercedesAMGTrims
+	| MazdaTrims
+	| MaseratiTrims
+	| LucidTrims
+	| LotusTrims
+	| LordstownTrims
+	| LincolnTrims
+	| LexusTrims
+	| LandRoverTrims
+	| LamborghiniTrims
+	| KiaTrims
+	| JeepTrims
+	| JaguaTrims
 	| "none";
 
 
@@ -753,6 +1142,76 @@ export type MiniModelYearTrims = {
 export type MercedesMaybachModelYearTrims = {
 	year: MercedesMaybachYears;
 	trims: MercedesMaybachTrims[];
+}
+
+export type MercedesBenzModelYearTrims = {
+	year: MercedesBenzYears;
+	trims: MercedesBenzTrims[];
+}
+
+export type MercedesAMGModelYearTrims = {
+	year: MercedesAMGYears;
+	trims: MercedesAMGTrims[];
+}
+
+export type MazdaModelYearTrims = {
+	year: MazdaYears;
+	trims: MazdaTrims[];
+}
+
+export type MaseratiModelYearTrims = {
+	year: MaseratiYears;
+	trims: MaseratiTrims[];
+}
+
+export type LucidModelYearTrims = {
+	year: LucidYears;
+	trims: LucidTrims[];
+}
+
+export type LotusModelYearTrims = {
+	year: LotusYears;
+	trims: LotusTrims[];
+}
+
+export type LordstownModelYearTrims = {
+	year: LordstownYears;
+	trims: LordstownTrims[];
+}
+
+export type LincolnModelYearTrims = {
+	year: LincolnYears;
+	trims: LincolnTrims[];
+}
+
+export type LexusModelYearTrims = {
+	year: LexusYears;
+	trims: LexusTrims[];
+}
+
+export type LandRoverModelYearTrims = {
+	year: LandRoverYears;
+	trims: LandRoverTrims[];
+}
+
+export type LamborghiniModelYearTrims = {
+	year: LamborghiniYears;
+	trims: LamborghiniTrims[];
+}
+
+export type KiaModelYearTrims = {
+	year: KiaYears;
+	trims: KiaTrims[];
+}
+
+export type JeepModelYearTrims = {
+	year: JeepYears;
+	trims: JeepTrims[];
+}
+
+export type JaguaModelYearTrims = {
+	year: JaguaYears;
+	trims: JaguaTrims[];
 }
 
 /**ModelsItems*/
@@ -852,6 +1311,77 @@ export type MercedesMaybachModelsItem = {
 	yearTrims: MercedesMaybachModelYearTrims[];
 };
 
+export type MercedesBenzModelsItem = {
+	model: MercedesBenzModels;
+	yearTrims: MercedesBenzModelYearTrims[];
+};
+
+export type MercedesAMGModelsItem = {
+	model: MercedesAMGModels;
+	yearTrims: MercedesAMGModelYearTrims[];
+};
+
+export type MazdaModelsItem = {
+	model: MazdaModels;
+	yearTrims: MazdaModelYearTrims[];
+};
+
+export type MaseratiModelsItem = {
+	model: MaseratiModels;
+	yearTrims: MaseratiModelYearTrims[];
+};
+
+export type LucidModelsItem = {
+	model: LucidModels;
+	yearTrims: LucidModelYearTrims[];
+};
+
+export type LotusModelsItem = {
+	model: LotusModels;
+	yearTrims: LotusModelYearTrims[];
+};
+
+export type LordstownModelsItem = {
+	model: LordstownModels;
+	yearTrims: LordstownModelYearTrims[];
+};
+
+export type LincolnModelsItem = {
+	model: LincolnModels;
+	yearTrims: LincolnModelYearTrims[];
+};
+
+export type LexusModelsItem = {
+	model: LexusModels;
+	yearTrims: LexusModelYearTrims[];
+};
+
+export type LandRoverModelsItem = {
+	model: LandRoverModels;
+	yearTrims: LandRoverModelYearTrims[];
+};
+
+export type LamborghiniModelsItem = {
+	model: LamborghiniModels;
+	yearTrims: LamborghiniModelYearTrims[];
+};
+
+export type KiaModelsItem = {
+	model: KiaModels;
+	yearTrims: KiaModelYearTrims[];
+};
+
+
+export type JeepModelsItem = {
+	model: JeepModels;
+	yearTrims: JeepModelYearTrims[];
+};
+
+export type JaguaModelsItem = {
+	model: JaguaModels;
+	yearTrims: JaguaModelYearTrims[];
+};
+
 export type CarModelsArray =
 	| FordModelsItem[]
 	| HyundaiModelsItem[]
@@ -871,7 +1401,21 @@ export type CarModelsArray =
 	| NissanModelsItem[]
 	| MitsubishiModelsItem[]
 	| MiniModelsItem[]
-	| MercedesMaybachModelsItem[];
+	| MercedesMaybachModelsItem[]
+	| MercedesBenzModelsItem[]
+	| MercedesAMGModelsItem[]
+	| MazdaModelsItem[]
+	| MaseratiModelsItem[]
+	| LucidModelsItem[]
+	| LotusModelsItem[]
+	| LordstownModelsItem[]
+	| LincolnModelsItem[]
+	| LexusModelsItem[]
+	| LandRoverModelsItem[]
+	| LamborghiniModelsItem[]
+	| KiaModelsItem[]
+	| JeepModelsItem[]
+	| JaguaModelsItem[];
 
 export type CarMakeModelsForInputItems = {
 	label: CarModelsType;

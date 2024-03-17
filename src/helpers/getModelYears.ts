@@ -1,6 +1,20 @@
 import {
 	fordModels,
 	hyundaiModels,
+	jaguarModels,
+	jeepModels,
+	kiaModels,
+	lamborghiniModels,
+	landRoverModels,
+	lexusModels,
+	lincolnModels,
+	lordstownModels,
+	lotusModels,
+	lucidModels,
+	maseratiModels,
+	mazdaModels,
+	mercedesAMGModels,
+	mercedesBenzModels,
 	mercedesMaybachModels,
 	miniModels,
 	mitsubishiModels,
@@ -100,6 +114,49 @@ const getModelYears = (x: GetModelYearsProps): CarYearsForInputItems[] => {
 		
 		case "Mercedes-Maybach":
 			return getModelYearsHelper({currentCarModels: mercedesMaybachModels, currentModel: model});
+		
+		case "Mercedes-Benz":
+			return getModelYearsHelper({currentCarModels: mercedesBenzModels, currentModel: model});
+		
+		case "Mercedes-AMG":
+			return getModelYearsHelper({currentCarModels: mercedesAMGModels, currentModel: model});
+		
+		case "Mazda":
+			return getModelYearsHelper({currentCarModels: mazdaModels, currentModel: model});
+		
+		
+		case "Maserati":
+			return getModelYearsHelper({currentCarModels: maseratiModels, currentModel: model});
+		
+		case "Lucid":
+			return getModelYearsHelper({currentCarModels: lucidModels, currentModel: model});
+		
+		case "Lotus":
+			return getModelYearsHelper({currentCarModels: lotusModels, currentModel: model});
+		
+		case "Lordstown":
+			return getModelYearsHelper({currentCarModels: lordstownModels, currentModel: model});
+		
+		case "Lincoln":
+			return getModelYearsHelper({currentCarModels: lincolnModels, currentModel: model});
+		
+		case "Lexus":
+			return getModelYearsHelper({currentCarModels: lexusModels, currentModel: model});
+		
+		case "Land Rover":
+			return getModelYearsHelper({currentCarModels: landRoverModels, currentModel: model});
+		
+		case "Lamborghini":
+			return getModelYearsHelper({currentCarModels: lamborghiniModels, currentModel: model});
+		
+		case "Kia":
+			return getModelYearsHelper({currentCarModels: kiaModels, currentModel: model});
+		
+		case "Jeep":
+			return getModelYearsHelper({currentCarModels: jeepModels, currentModel: model});
+		
+		case "Jaguar":
+			return getModelYearsHelper({currentCarModels: jaguarModels, currentModel: model});
 		
 		case "Others":
 		default:

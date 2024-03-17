@@ -1,6 +1,20 @@
 import {
 	FordModelsItem,
 	HyundaiModelsItem,
+	JaguaModelsItem,
+	JeepModelsItem,
+	KiaModelsItem,
+	LamborghiniModelsItem,
+	LandRoverModelsItem,
+	LexusModelsItem,
+	LincolnModelsItem,
+	LordstownModelsItem,
+	LotusModelsItem,
+	LucidModelsItem,
+	MaseratiModelsItem,
+	MazdaModelsItem,
+	MercedesAMGModelsItem,
+	MercedesBenzModelsItem,
 	MercedesMaybachModelsItem,
 	MiniModelsItem,
 	MitsubishiModelsItem,
@@ -1535,6 +1549,778 @@ export const mercedesMaybachModels: MercedesMaybachModelsItem[] = [
 				trims: [
 					'EQS680',
 					'EQS680 Night Series'
+				]
+			}
+		]
+	}
+]
+
+export const mercedesBenzModels: MercedesBenzModelsItem[] = [
+	{
+		model: 'B-Class Electric Drive',
+		yearTrims: [
+			{
+				year: '2017',
+				trims: [
+					'B-Class'
+				]
+			}
+		]
+	},
+	{
+		model: 'eSprinter',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Cargo Van High Output',
+					'Cargo Van Standard Output'
+				]
+			}
+		]
+	},
+	{
+		model: 'EQS SUV',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'EQS450+ Premium',
+					'EQS450 4Matic Premium',
+					'EQS450+ Exclusive',
+					'EQS450 4Matic Exclusive',
+					'EQS450+ Pinnacle',
+					'EQS450 4Matic Pinnacle',
+					'EQS580 4Matic Premium',
+					'EQS580 4Matic Exclusive',
+					'EQS580 4Matic Pinnacle'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'EQS450+ Premium',
+					'EQS450 4Matic Premium',
+					'EQS450+ Exclusive',
+					'EQS450 4Matic Exclusive',
+					'EQS450+ Pinnacle',
+					'EQS450 4Matic Pinnacle',
+					'EQS580 4Matic Premium',
+					'EQS580 4Matic Exclusive',
+					'EQS580 4Matic Pinnacle'
+				]
+			}
+		]
+	},
+	{
+		model: 'EQS',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'EQS450+ Premium',
+					'EQS450 4Matic Premium',
+					'EQS450+ Exclusive',
+					'EQS450 4Matic Exclusive',
+					'EQS450+ Pinnacle',
+					'EQS450 4Matic Pinnacle',
+					'EQS580 4Matic Premium',
+					'EQS580 4Matic Exclusive',
+					'EQS580 4Matic Pinnacle'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'EQS450+',
+					'EQS450 4Matic',
+					'EQS580 4Matic'
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'EQS450+ Premium',
+					'EQS450+ Exclusive',
+					'EQS450+ Pinnacle',
+					'EQS580 Premium',
+					'EQS580 Exclusive',
+					'EQS580 Pinnacle'
+				]
+			}
+		]
+	},
+	{
+		model: 'EQG',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'EQG'
+				]
+			}
+		]
+	},
+	{
+		model: 'EQE SUV',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'EQE350 4Matic Premium',
+					'EQE350 4Matic Exclusive',
+					'EQE350 4Matic Pinnacle',
+					'EQE350+ Exclusive',
+					'EQE350+ Pinnacle',
+					'EQE500 Premium',
+					'EQE500 4Matic Exclusive',
+					'EQE500 4Matic Pinnacle'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'EQE350 4Matic Premium',
+					'EQE350 4Matic Exclusive',
+					'EQE350 4Matic Pinnacle',
+					'EQE350+ Exclusive',
+					'EQE350+ Pinnacle',
+					'EQE350+ Premium',
+					'EQE500 4Matic Premium',
+					'EQE500 4Matic Exclusive',
+					'EQE500 4Matic Pinnacle'
+				]
+			}
+		]
+	},
+	{
+		model: 'EQE',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'EQE350 4Matic Premium',
+					'EQE350 4Matic Exclusive',
+					'EQE350 4Matic Pinnacle',
+					'EQE350+ Exclusive',
+					'EQE350+ Pinnacle',
+					'EQE350+ Premium',
+					'EQE500 4Matic Premium',
+					'EQE500 4Matic Exclusive',
+					'EQE500 4Matic Pinnacle'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'EQE350+',
+					'EQE350',
+					'EQE500'
+				]
+			}
+		]
+	},
+	{
+		model: 'EQB',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'EQB250+ Premium',
+					'EQB300 Premium',
+					'EQB350 Premium'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'EQB250+ Premium',
+					'EQB250+ Pinnacle',
+					'EQB250+ Exclusive',
+					'EQB300 Premium',
+					'EQB300 Pinnacle',
+					'EQB300 Exclusive',
+					'EQB350 Premium',
+					'EQB350 Pinnacle',
+					'EQB350 Exclusive'
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'EQB300 Exclusive',
+					'EQB350 Exclusive',
+					'EQB300 Pinnacle',
+					'EQB350 Pinnacle'
+				]
+			}
+		]
+	},
+	{
+		model: 'CLA-Class EV',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'Premium',
+					'Exclusive',
+					'Pinnacle'
+				]
+			}
+		]
+	}
+]
+
+export const mercedesAMGModels: MercedesAMGModelsItem[] = [
+	{
+		model: 'EQE53',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Exclusive',
+					'Pinnacle'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'EQE53'
+				]
+			}
+		]
+	},
+	{
+		model: 'EQE SUV',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'EQE53',
+					'EQE53 Pinnacle',
+					'EQE53 Dynamic Plus',
+					'EQE53 Dynamic Plus Pinnacle'
+				]
+			}
+		
+		]
+	},
+	{
+		model: 'EQS',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Premium',
+					'Exclusive',
+					'Pinnacle'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Premium',
+					'Exclusive',
+					'Pinnacle'
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'Premium',
+					'Exclusive',
+					'Pinnacle'
+				]
+			}
+		
+		]
+	}
+];
+
+export const mazdaModels: MazdaModelsItem[] = [
+	{
+		model: 'MX-30',
+		yearTrims: [
+			{
+				year: '2023',
+				trims: [
+					'Base',
+					'Premium Plus'
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'Base',
+					'Premium Plus'
+				]
+			}
+		]
+	}
+]
+
+export const maseratiModels: MaseratiModelsItem[] = [
+	{
+		model: 'Grecale Folgore',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'GT',
+					'Modena',
+					'Trofeo'
+				]
+			}
+		]
+		
+	},
+	{
+		model: 'GranTurismo Folgore',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Folgore'
+				]
+			}
+		]
+	}
+]
+
+export const lucidModels: LucidModelsItem[] = [
+	{
+		model: 'Gravity',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Pure',
+					'Touring',
+					'Grand Touring',
+					'Dream Edition',
+					'Sapphire'
+				]
+			}
+		]
+	},
+	{
+		model: 'Air',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Pure RWD',
+					'Touring AWD',
+					'Grand Touring AWD',
+					'Sapphire'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Pure',
+					'Touring',
+					'Grand Touring',
+					'Grand Touring Performance',
+					'Sapphire'
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'Pure',
+					'Touring',
+					'Grand Touring',
+					'Grand Touring Performance',
+					'Dream Edition',
+					'Dream Edition Performance'
+				]
+			}
+		]
+	}
+]
+
+export const lotusModels: LotusModelsItem[] = [
+	{
+		model: 'Type 135',
+		yearTrims: [
+			{
+				year: '2028',
+				trims: [
+					'Base',
+					'S',
+					'R'
+				]
+			}
+		]
+	},
+	{
+		model: 'Evija',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Evija'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Evija'
+				]
+			}
+		]
+	},
+	{
+		model: 'Emeya',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Base',
+					'S',
+					'R'
+				]
+			}
+		]
+	},
+	{
+		model: 'Eletre',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Base',
+					'S',
+					'R'
+				]
+			}
+		]
+	}
+]
+
+export const lordstownModels: LordstownModelsItem[] = [
+	{
+		model: 'Endurance',
+		yearTrims: [
+			{
+				year: '2023',
+				trims: [
+					'Endurance'
+				]
+			}
+		]
+	}
+]
+
+export const lincolnModels: LincolnModelsItem[] = [
+	{
+		model: 'Star',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Standard',
+					'Reserve',
+					'Black Label'
+				]
+			}
+		]
+	}
+]
+
+export const lexusModels: LexusModelsItem[] = [
+	{
+		model: 'TZ',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'TZ450e',
+					'TZ550e'
+				]
+			}
+		]
+	},
+	{
+		model: 'RZ',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'RZ300e Premium',
+					'RZ450e Premium',
+					'RZ300e Luxury',
+					'RZ450e Luxury'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Premium',
+					'Luxury'
+				]
+			}
+		]
+	}, {
+		model: 'Electrified Sports',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Base'
+				]
+			}
+		]
+	}
+]
+
+export const landRoverModels: LandRoverModelsItem[] = [
+	{
+		model: 'Range Rover EV',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'SE',
+					'HSE',
+					'Autobiography'
+				]
+			}
+		]
+	},
+	{
+		model: 'Defender Sport',
+		yearTrims: [
+			{
+				year: '2027',
+				trims: [
+					'Base',
+					'S',
+					'SE',
+					'HSE'
+				]
+			}
+		]
+	}
+
+]
+
+export const lamborghiniModels: LamborghiniModelsItem[] = [
+	{
+		model: 'Lanzador',
+		yearTrims: [
+			{
+				year: '2028',
+				trims: [
+					'Lanzador'
+				]
+			}
+		]
+	}
+]
+
+export const kiaModels: KiaModelsItem[] = [
+	{
+		model: 'EV3',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'Light',
+					'Wind',
+					'Land',
+					'GT-Line'
+				]
+			}
+		]
+	},
+	{
+		model: 'EV4',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'Light Standard Range',
+					'Light Long Range',
+					'Wind',
+					'GT-Line'
+				]
+			}
+		]
+	},
+	{
+		model: 'EV5',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Light RWD',
+					'Light Long Range RWD',
+					'Wind e-AWD',
+					'Land e-AWD',
+					'GT-Line e-AWD'
+				]
+			}
+		]
+	}, {
+		model: 'EV6',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Light',
+					'Wind',
+					'GT-Line',
+					'GT'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Light',
+					'Wind',
+					'Wind AWD',
+					'GT-Line',
+					'GT-Line AWD',
+					'Limited Edition',
+					'GT AWD'
+				]
+			}, {
+				year: '2022',
+				trims: [
+					'Light RWD',
+					'Wind RWD',
+					'Wind AWD',
+					'GT-Line RWD',
+					'GT-Line AWD'
+				]
+			}
+		]
+	},
+	{
+		model: 'EV9',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Light RWD',
+					'Light Long Range RWD',
+					'Wind e-AWD',
+					'Land e-AWD',
+					'GT-Line e-AWD'
+				]
+			}
+		]
+	},
+	{
+		model: 'Niro EV',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Wind',
+					'Wave'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Wind',
+					'Wave'
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'S',
+					'EX',
+					'EX Premium'
+				]
+			},
+			{
+				year: '2021',
+				trims: [
+					'EX',
+					'EX Premium'
+				]
+			},
+			{
+				year: '2020',
+				trims: [
+					'EX',
+					'EX Premium'
+				]
+			}
+		]
+	}
+]
+
+export const jeepModels: JeepModelsItem[] = [
+	{
+		model: 'Wagoneer S',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Series I',
+					'Series II',
+					'Series III'
+				]
+			}
+		]
+	},
+	{
+		model: 'Recon EV',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Sport',
+					'Willys',
+					'Rubicon',
+					'Sahara',
+					'Sahara High Altitude'
+				]
+			}
+		]
+	}
+]
+
+export const jaguarModels: JaguaModelsItem[] = [
+	{
+		model: 'I-Pace',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'R-Dynamic HSE'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'HSE'
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'HSE'
+				]
+			},
+			{
+				year: '2020',
+				trims: [
+					'S',
+					'SE',
+					'HSE'
+				]
+			},
+			{
+				year: '2019',
+				trims: [
+					'I-Pace'
 				]
 			}
 		]
