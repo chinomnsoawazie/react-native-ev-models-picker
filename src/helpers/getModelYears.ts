@@ -1,5 +1,20 @@
 import {
+	acuraModels,
+	afeelaModels,
+	audiModels,
+	bmwModels,
+	buickModels,
+	bytonModels,
+	cadillacModels,
+	chevroletModels,
+	chryslerModels,
+	dodgeModels,
+	fiatModels,
+	fiskerModels,
 	fordModels,
+	genesisModels,
+	gmcModels,
+	hondaModels,
 	hyundaiModels,
 	jaguarModels,
 	jeepModels,
@@ -157,6 +172,51 @@ const getModelYears = (x: GetModelYearsProps): CarYearsForInputItems[] => {
 		
 		case "Jaguar":
 			return getModelYearsHelper({currentCarModels: jaguarModels, currentModel: model});
+		
+		case "Honda":
+			return getModelYearsHelper({currentCarModels: hondaModels, currentModel: model});
+		
+		case "GMC":
+			return getModelYearsHelper({currentCarModels: gmcModels, currentModel: model});
+		
+		case "Genesis":
+			return getModelYearsHelper({currentCarModels: genesisModels, currentModel: model});
+		
+		case "Fisker":
+			return getModelYearsHelper({currentCarModels: fiskerModels, currentModel: model});
+		
+		case "Fiat":
+			return getModelYearsHelper({currentCarModels: fiatModels, currentModel: model});
+		
+		case "Dodge":
+			return getModelYearsHelper({currentCarModels: dodgeModels, currentModel: model});
+		
+		case "Chrysler":
+			return getModelYearsHelper({currentCarModels: chryslerModels, currentModel: model});
+		
+		case "Chevrolet":
+			return getModelYearsHelper({currentCarModels: chevroletModels, currentModel: model});
+		
+		case "Cadillac":
+			return getModelYearsHelper({currentCarModels: cadillacModels, currentModel: model});
+		
+		case "Byton":
+			return getModelYearsHelper({currentCarModels: bytonModels, currentModel: model});
+		
+		case "Buick":
+			return getModelYearsHelper({currentCarModels: buickModels, currentModel: model});
+		
+		case "BMW":
+			return getModelYearsHelper({currentCarModels: bmwModels, currentModel: model});
+		
+		case "Acura":
+			return getModelYearsHelper({currentCarModels: acuraModels, currentModel: model});
+		
+		case "Audi":
+			return getModelYearsHelper({currentCarModels: audiModels, currentModel: model});
+		
+		case "Afeela":
+			return getModelYearsHelper({currentCarModels: afeelaModels, currentModel: model});
 		
 		case "Others":
 		default:

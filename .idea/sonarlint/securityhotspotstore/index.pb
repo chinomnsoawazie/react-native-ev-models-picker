@@ -19,13 +19,9 @@ L
 src/helpers/getModelYears.ts,4/3/433a2bb35b4f7b247e3ba967b2dd682ae9c4f0c5
 K
 src/helpers/getYearTrims.ts,e/8/e83cedad1df848da53011dab3b86863dbab5b231
-F
-src/helpers/compare.ts,b/3/b37dc4cd2a46ec78b8ea4350daf8d4c37dfb26db
 D
 src/helpers/index.ts,b/5/b51f168784812f0270b8bb5e4992c372c2ff1c4d
 X
 (node_modules/typescript/lib/lib.es5.d.ts,3/d/3d99373f7b5eef4201ca57a888c1ec02e798f630
 H
 src/types/evDataTypes.ts,2/a/2a65827b24c525a82668a3a7f06af3df794d9023
-B
-src/types/index.ts,c/d/cd7a0a5ed00515f0d0cd32a8badd4ed5ef962af8

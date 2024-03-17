@@ -1,5 +1,20 @@
 import {
+	acuraModels,
+	afeelaModels,
+	audiModels,
+	bmwModels,
+	buickModels,
+	bytonModels,
+	cadillacModels,
+	chevroletModels,
+	chryslerModels,
+	dodgeModels,
+	fiatModels,
+	fiskerModels,
 	fordModels,
+	genesisModels,
+	gmcModels,
+	hondaModels,
 	hyundaiModels,
 	jaguarModels,
 	jeepModels,
@@ -151,6 +166,51 @@ const getMakeModels = (x: GetMakeModelsProps): CarMakeModelsForInputItems[] => {
 		
 		case 'Jaguar':
 			return getMakeModelsHelper({currentModels: jaguarModels});
+		
+		case 'Honda':
+			return getMakeModelsHelper({currentModels: hondaModels});
+		
+		case 'GMC':
+			return getMakeModelsHelper({currentModels: gmcModels});
+		
+		case 'Genesis':
+			return getMakeModelsHelper({currentModels: genesisModels});
+		
+		case 'Fisker':
+			return getMakeModelsHelper({currentModels: fiskerModels});
+		
+		case 'Fiat':
+			return getMakeModelsHelper({currentModels: fiatModels});
+		
+		case 'Dodge':
+			return getMakeModelsHelper({currentModels: dodgeModels});
+		
+		case 'Chrysler':
+			return getMakeModelsHelper({currentModels: chryslerModels});
+		
+		case 'Chevrolet':
+			return getMakeModelsHelper({currentModels: chevroletModels});
+		
+		case 'Cadillac':
+			return getMakeModelsHelper({currentModels: cadillacModels});
+		
+		case 'Byton':
+			return getMakeModelsHelper({currentModels: bytonModels});
+		
+		case "Buick":
+			return getMakeModelsHelper({currentModels: buickModels});
+		
+		case "BMW":
+			return getMakeModelsHelper({currentModels: bmwModels});
+		
+		case "Acura":
+			return getMakeModelsHelper({currentModels: acuraModels});
+		
+		case "Audi":
+			return getMakeModelsHelper({currentModels: audiModels});
+		
+		case "Afeela":
+			return getMakeModelsHelper({currentModels: afeelaModels});
 		
 		case "Others":
 		default:

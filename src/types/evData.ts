@@ -1,5 +1,20 @@
 import {
+	AcuraModelsItem,
+	AfeelaModlesItem,
+	AudiModelsItem,
+	BMWModelsItem,
+	BuickModelsItem,
+	BytonModelsItem,
+	CadillacModelsItem,
+	ChevroletModelsItem,
+	ChryslerModelsItem,
+	DodgeModelsItem,
+	FiatModelsItem,
+	FiskerModelsItem,
 	FordModelsItem,
+	GenesisModelsItem,
+	GMCModelsItem,
+	HondaModelsItem,
 	HyundaiModelsItem,
 	JaguaModelsItem,
 	JeepModelsItem,
@@ -2321,6 +2336,863 @@ export const jaguarModels: JaguaModelsItem[] = [
 				year: '2019',
 				trims: [
 					'I-Pace'
+				]
+			}
+		]
+	}
+]
+
+export const hondaModels: HondaModelsItem[] = [
+	{
+		model: 'Fit EV',
+		yearTrims: [
+			{
+				year: '2014',
+				trims: [
+					'Fit EV'
+				]
+			}
+		]
+	},
+	{
+		model: 'Prologue',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'EX FWD',
+					'EX AWD',
+					'Touring FWD',
+					'Touring AWD',
+					'Elite AWD'
+				]
+			}
+		]
+	},
+	{
+		model: 'CR-V',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'CR-V Fuel Cell'
+				]
+			}
+		]
+	}
+]
+
+export const gmcModels: GMCModelsItem[] = [
+	{
+		model: 'Sierra EV',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Denali Edition 1'
+				]
+			}
+		]
+	},
+	{
+		model: 'Hummer EV',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Hummer EV2',
+					'Hummer EV2X',
+					'Edition 1',
+					'Hummer EV3X'
+				]
+			}
+		]
+	},
+	{
+		model: 'Hummer EV Pickup',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Hummer EV2',
+					'Hummer EV3X'
+				]
+			}
+		]
+	}
+]
+
+export const genesisModels: GenesisModelsItem[] = [
+	{
+		model: 'GV60',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Standard',
+					'Advanced',
+					'Prestige'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Advanced',
+					'Prestige'
+				]
+			}
+		]
+	},
+	{
+		model: 'GT90',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Prestige'
+				]
+			}
+		]
+	},
+	{
+		model: 'GV70',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Advanced',
+					'Prestige'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Advanced',
+					'Prestige'
+				]
+			}
+		]
+	},
+	{
+		model: 'G80',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Advanced',
+					'Prestige'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Prestige'
+				]
+			}
+		]
+	}
+]
+
+export const fiskerModels: FiskerModelsItem[] = [
+	{
+		model: 'Alaska',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Sport',
+					'Ultra',
+					'Extreme',
+					'One'
+				]
+			}
+		]
+	},
+	{
+		model: 'Pear',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'Sport',
+					'Ultra',
+					'Extreme',
+					'One'
+				]
+			}
+		]
+	},
+	{
+		model: 'Ocean',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Sport',
+					'Ultra',
+					'Extreme',
+					'Force E'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Sport',
+					'Ultra',
+					'Extreme',
+					'One'
+				]
+			}
+		]
+	},
+	{
+		model: 'Rōnin',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'Rōnin'
+				
+				]
+			}
+		
+		]
+	}
+]
+
+export const fiatModels: FiatModelsItem[] = [
+	{
+		model: '500e',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'INSPI(RED)',
+					'Inspired by Beauty',
+					'Inspired by Music'
+				]
+			},
+			{
+				year: '2019',
+				trims: [
+					'500e'
+				]
+			}
+		]
+	}
+]
+
+export const dodgeModels: DodgeModelsItem[] = [
+	{
+		model: 'Charger Daytona EV',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Daytona R/T',
+					'Daytona Scat Pack'
+				]
+			}, {
+				year: '2024',
+				trims: [
+					'Daytona R/T',
+					'Daytona Scat Pack'
+				]
+			}
+		]
+	}
+]
+
+export const chryslerModels: ChryslerModelsItem[] = [
+	{
+		model: 'Airflow',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Touring',
+					'Limited',
+					'Pinnacle'
+				]
+			}
+		]
+	}
+]
+
+export const chevroletModels: ChevroletModelsItem[] = [
+	{
+		model: 'Corvette EV',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'1LT',
+					'2LT',
+					'3LT'
+				]
+			}
+		]
+	},
+	{
+		model: 'Equinox EV',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'1LT',
+					'2LT',
+					'3LT',
+					'2RS',
+					'3RS'
+				]
+			}
+		]
+	},
+	{
+		model: 'Silverado EV',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'3WT',
+					'4WT',
+					'RST First Edition'
+				]
+			}
+		]
+	},
+	{
+		model: 'Camaro EV',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'1LT',
+					'2LT',
+					'3LT'
+				]
+			}
+		]
+	},
+	{
+		model: 'Blazer EV',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'LT eAWD',
+					'RS eAWD',
+					'RS RWD',
+					'SS'
+				]
+			}
+		]
+	}
+]
+
+export const cadillacModels: CadillacModelsItem[] = [
+	{
+		model: 'Celestiq',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Celestiq'
+				]
+			}
+		]
+	},
+	{
+		model: 'Escalade IQ/IQL',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Escalade IQ',
+					'Escalade IQ First Edition'
+				]
+			}
+		]
+	},
+	{
+		model: 'Lyriq',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Tech',
+					'Luxury',
+					'Sport'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Debut Edition',
+					'Single Motor RWD',
+					'Dual Motor AWD'
+				]
+			}
+		]
+	},
+	{
+		model: 'Optiq',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Tech',
+					'Luxury',
+					'Sport']
+			}
+		]
+	},
+	{
+		model: 'Vistiq',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'Tech',
+					'Luxury',
+					'Sport'
+				]
+			}
+		
+		]
+	}
+]
+
+export const bytonModels: BytonModelsItem[] = [
+	{
+		model: 'M-Byte',
+		yearTrims: [
+			{
+				year: '2022',
+				trims: [
+					'Standard Range',
+					'Long Range'
+				]
+			}
+		]
+	}
+]
+
+export const buickModels: BuickModelsItem[] = [
+	{
+		model: 'Electra E5',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Preferred',
+					'Essence',
+					'Avenir'
+				]
+			}
+		]
+	}
+]
+
+export const bmwModels: BMWModelsItem[] = [
+	{
+		model: 'i3',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'i3'
+				]
+			},
+			{
+				year: '2021',
+				trims: [
+					'i3',
+					'i3s',
+					'i3 with Range Extender',
+					'i3s with Range Extender'
+				]
+			},
+			{
+				year: '2020',
+				trims: [
+					'120 Ah',
+					's 120 Ah',
+					'120 Ah w/Range Extender',
+					's 120 Ah w/Range Extender'
+				]
+			},
+			{
+				year: '2019',
+				trims: [
+					'i3',
+					'i3s',
+					'i3 with Range Extender',
+					'i3s with Range Extender'
+				]
+			},
+			{
+				year: '2018',
+				trims: [
+					'i3 94 Ah',
+					'i3s 94 Ah',
+					'i3 94 Ah w/Range Extender',
+					'i3s 94 Ah w/Range Extender'
+				]
+			},
+			{
+				year: '2017',
+				trims: [
+					'Base'
+				]
+			}
+		]
+	},
+	{
+		model: 'i4',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'eDrive35',
+					'eDrive40',
+					'xDrive40',
+					'M50'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'eDrive35',
+					'eDrive40',
+					'M50'
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'eDrive40',
+					'M50'
+				]
+			}
+		]
+	},
+	{
+		model: 'i5',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'eDrive40',
+					'xDrive40',
+					'M60 xDrive'
+				]
+			},
+			{
+				year: '2024',
+				trims: [
+					'xDrive40',
+					'M60 xDrive'
+				]
+			}
+		]
+	},
+	{
+		model: 'i7',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'eDrive50',
+					'xDrive60',
+					'M70'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'xDrive60'
+				]
+			}
+		]
+	},
+	{
+		model: 'iX',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'xDrive50',
+					'M60'
+				]
+			},
+			{
+				year: '2024',
+				trims: [
+					'xDrive50',
+					'M60'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'xDrive50',
+					'M60'
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'xDrive50'
+				]
+			}
+		]
+	},
+	{
+		model: 'iX3',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'eDrive40',
+					'xDrive40',
+					'M50'
+				]
+			}
+		
+		]
+	}
+]
+
+export const acuraModels: AcuraModelsItem[] = [
+	{
+		model: 'ZDX',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'A-Spec',
+					'Type S'
+				]
+			}
+		]
+	}
+]
+
+export const audiModels: AudiModelsItem[] = [
+	{
+		model: 'SQ8 e-tron',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Premium Plus',
+					'Premium Plus Sportback',
+					'Prestige',
+					'Prestige Sportback'
+				]
+			}
+		]
+	},
+	{
+		model: 'SQ6 e-tron',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Premium',
+					'Premium Plus',
+					'Sportback Premium',
+					'Sportback Premium Plus',
+					'Prestige',
+					'Sportback Prestige'
+				]
+			}
+		]
+	},
+	{
+		model: 'Q8 e-tron',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Premium',
+					'Premium Plus',
+					'Sportback Premium',
+					'Sportback Premium Plus',
+					'Prestige',
+					'Sportback Prestige'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Premium',
+					'Premium Plus',
+					'Sportback Premium',
+					'Sportback Premium Plus',
+					'Chronos Edition',
+					'Sportback Prestige'
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'Premium',
+					'Premium Plus',
+					'Sportback Premium',
+					'Sportback Premium Plus',
+					'Chronos Edition',
+					'Sportback Prestige'
+				]
+			},
+			{
+				year: '2021',
+				trims: [
+					'Premium',
+					'Premium Plus',
+					'Sportback Premium',
+					'Sportback Premium Plus',
+					'Prestige',
+					'Sportback Prestige'
+				]
+			},
+			{
+				year: '2020',
+				trims: [
+					'Premium Plus Sportback',
+					'Premium Plus',
+					'Prestige',
+					'Prestige Sportback'
+				]
+			},
+			{
+				year: '2019',
+				trims: [
+					'e-tron'
+				]
+			}
+		]
+	},
+	{
+		model: 'Q6 e-tron',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Premium',
+					'Premium Plus',
+					'Sportback Premium',
+					'Sportback Premium Plus',
+					'Sportback Prestige',
+					'Prestige'
+				]
+			}
+		]
+	},
+	{
+		model: 'Q4 e-tron',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Premium 40',
+					'Premium Plus 40',
+					'Premium 50',
+					'Premium 55',
+					'Sportback Premium 55',
+					'Sportback Premium 50',
+					'Premium Plus 50',
+					'Premium Plus 50',
+					'Premium Plus 55',
+					'Prestige 55',
+					'Prestige 50',
+					'Sportback Premium Plus 55',
+					'Sportback Premium Plus 50',
+					'Sportback Prestige 50',
+					'Sportback Prestige 55'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Premium 40',
+					'Premium Plus 40',
+					'Premium 50',
+					'Premium Plus 50',
+					'Sportback Premium 50',
+					'Prestige 50',
+					'Sportback Premium Plus 50',
+					'Sportback Prestige 50'
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'Premium',
+					'Sportback Premium',
+					'Premium Plus',
+					'Sportback Premium Plus',
+					'Prestige',
+					'Sportback Prestige'
+				]
+			}
+		]
+	},
+	{
+		model: 'e-tron GT',
+		yearTrims: [
+			{
+				year: '2024',
+				trims: [
+					'Premium Plus',
+					'Prestige',
+					'RS'
+				]
+			},
+			{
+				year: '2023',
+				trims: [
+					'Premium Plus',
+					'Prestige',
+					'RS'
+				]
+			},
+			{
+				year: '2022',
+				trims: [
+					'Premium Plus',
+					'Prestige',
+					'RS'
+				]
+			}
+		]
+	},
+	{
+		model: 'A6 e-tron',
+		yearTrims: [
+			{
+				year: '2025',
+				trims: [
+					'Premium',
+					'Premium Plus',
+					'Prestige',
+					'RS'
+				]
+			}
+		
+		]
+	}
+]
+
+export const afeelaModels: AfeelaModlesItem[] = [
+	{
+		model: 'EV Sedan',
+		yearTrims: [
+			{
+				year: '2026',
+				trims: [
+					'Base'
 				]
 			}
 		]
