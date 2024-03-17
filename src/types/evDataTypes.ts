@@ -39,6 +39,21 @@ export type CarMake =
 	| 'Kia'
 	| 'Jeep'
 	| 'Jaguar'
+	| 'Honda'
+	| 'GMC'
+	| 'Genesis'
+	| 'Fisker'
+	| 'Fiat'
+	| 'Dodge'
+	| 'Chrysler'
+	| 'Chevrolet'
+	| 'Cadillac'
+	| 'Byton'
+	| 'Buick'
+	| 'BMW'
+	| 'Audi'
+	| 'Acura'
+	| 'Afeela'
 	| "Others"
 	| 'none'
 
@@ -211,6 +226,81 @@ export const evMakes: CarMakeItemType[] = [
 	{
 		label: "Jaguar",
 		value: "Jaguar",
+		disabled: false
+	},
+	{
+		label: "Honda",
+		value: "Honda",
+		disabled: false
+	},
+	{
+		label: "GMC",
+		value: "GMC",
+		disabled: false
+	},
+	{
+		label: "Genesis",
+		value: "Genesis",
+		disabled: false
+	},
+	{
+		label: "Fisker",
+		value: "Fisker",
+		disabled: false
+	},
+	{
+		label: "Fiat",
+		value: "Fiat",
+		disabled: false
+	},
+	{
+		label: "Dodge",
+		value: "Dodge",
+		disabled: false
+	},
+	{
+		label: "Chrysler",
+		value: "Chrysler",
+		disabled: false
+	},
+	{
+		label: "Chevrolet",
+		value: "Chevrolet",
+		disabled: false
+	},
+	{
+		label: "Cadillac",
+		value: "Cadillac",
+		disabled: false
+	},
+	{
+		label: "Byton",
+		value: "Byton",
+		disabled: false
+	},
+	{
+		label: "Buick",
+		value: "Buick",
+		disabled: false
+	},
+	{
+		label: "BMW",
+		value: "BMW",
+		disabled: false
+	},
+	{
+		label: "Audi",
+		value: "Audi",
+		disabled: false
+	},
+	{
+		label: "Acura",
+		value: "Acura",
+		disabled: false
+	},
+	{
+		label: "Afeela",
+		value: "Afeela",
 		disabled: false
 	},
 	{
@@ -952,6 +1042,261 @@ export type JaguaTrims =
 	| 'HSE'
 	| 'R-Dynamic HSE'
 
+export type HondaModels =
+	| 'Fit EV'
+	| 'Prologue'
+	| 'CR-V'
+export type HondaYears =
+	| '2014'
+	| '2024'
+	| '2025'
+export type HondaTrims =
+	| 'Fit EV'
+	| 'EX FWD'
+	| 'EX AWD'
+	| 'Touring FWD'
+	| 'Touring AWD'
+	| 'Elite AWD'
+	| 'CR-V Fuel Cell'
+
+export type GMCModels =
+	| 'Sierra EV'
+	| 'Hummer EV'
+	| 'Hummer EV Pickup'
+export type GMCYears =
+	| '2024'
+export type GMCTrims =
+	| 'Denali Edition 1'
+	| 'Hummer EV2'
+	| 'Hummer EV2X'
+	| 'Hummer EV3X'
+	| 'Edition 1'
+
+export type GenesisModels =
+	| 'GV60'
+	| 'GV70'
+	| 'G80'
+	| 'GT90'
+export type GenesisYears =
+	| '2025'
+	| '2024'
+	| '2023'
+export type GenesisTrims =
+	| 'Standard'
+	| 'Advanced'
+	| 'Performance'
+	| 'Prestige'
+
+export type FiskerModels =
+	| 'Alaska'
+	| 'Pear'
+	| 'Ocean'
+	| 'Rōnin'
+export type FiskerYears =
+	| '2026'
+	| '2025'
+	| '2024'
+	| '2023'
+export type FiskerTrims =
+	| 'Sport'
+	| 'Ultra'
+	| 'Extreme'
+	| 'One'
+	| 'Force E'
+	| 'Rōnin'
+
+export type FiatModels =
+	|'500e'
+export type FiatYears =
+	| '2024'
+	| '2019'
+export type FiatTrims =
+	| 'INSPI(RED)'
+	| 'Inspired by Music'
+	| 'Inspired by Beauty'
+	| '500e'
+
+export type DodgeModels =
+	| 'Charger Daytona EV'
+export type DodgeYears =
+	| '2025'
+	| '2024'
+export type DodgeTrims =
+	| 'Daytona R/T'
+	| 'Daytona Scat Pack'
+
+export type ChryslerModels =
+	| 'Airflow'
+export type ChryslerYears =
+	| '2025'
+export type ChryslerTrims =
+	| 'Touring'
+	| 'Limited'
+	| 'Pinnacle'
+
+export type ChevroletModels =
+	| 'Corvette EV'
+	| 'Equinox EV'
+	| 'Silverado EV'
+	| 'Camaro EV'
+	| 'Blazer EV'
+export type ChevroletYears =
+	| '2025'
+	| '2024'
+export type ChevroletTrims =
+	| '3WT'
+	| '4WT'
+	| 'RST First Edition'
+	| '1LT'
+	| '2LT'
+	| '3LT'
+	| '2RS'
+	| '3RS'
+	| 'LT eAWD'
+	| 'RS eAWD'
+	| 'RS RWD'
+	| 'SS'
+
+export type CadillacModels =
+	| 'Vistiq'
+	| 'Optiq'
+	| 'Lyriq'
+	| 'Celestiq'
+	| 'Escalade IQ/IQL'
+export type CadillacYears =
+	| '2026'
+	| '2025'
+	| '2024'
+	| '2023'
+export type CadillacTrims =
+	| 'Tech'
+	| 'Sport'
+	| 'Luxury'
+	| 'Debut Edition'
+	| 'Single Motor RWD'
+	| 'Dual Motor AWD'
+	| 'Escalade IQ'
+	| 'Escalade IQ First Edition'
+	| 'Celestiq'
+
+export type BytonModels =
+	| 'M-Byte'
+export type BytonYears =
+	| '2022'
+export type BytonTrims =
+	| 'Standard Range'
+	| 'Long Range'
+
+export type BuickModels =
+	| 'Electra E5'
+export type BuickYears =
+	| '2025'
+export type BuickTrims =
+	| 'Preferred'
+	| 'Essence'
+	| 'Avenir'
+
+export type BMWModels =
+	| 'iX3'
+	| 'iX'
+	| 'i7'
+	| 'i5'
+	| 'i4'
+	| 'i3'
+export type BMWYears =
+	| '2026'
+	| '2025'
+	| '2024'
+	| '2023'
+	| '2022'
+	| '2021'
+	| '2020'
+	| '2019'
+	| '2018'
+	| '2017'
+export type BMWTrims =
+	| 'eDrive35'
+	| 'eDrive40'
+	| 'eDrive50'
+	| 'xDrive40'
+	| 'xDrive50'
+	| 'xDrive60'
+	| 'M50'
+	| 'M60'
+	| 'M60 xDrive'
+	| 'M70'
+	| 'Base'
+	| 'i3'
+	| 'i3s'
+	| 'i3 with Range Extender'
+	| 'i3s with Range Extender'
+	| 'i3 94 Ah'
+	| 'i3s 94 Ah'
+	| 'i3 94 Ah w/Range Extender'
+	| 'i3s 94 Ah w/Range Extender'
+	| '120 Ah'
+	| 's 120 Ah'
+	| '120 Ah w/Range Extender'
+	| 's 120 Ah w/Range Extender'
+
+export type AcuraModels =
+	|'ZDX'
+export type AcuraYears =
+	| '2024'
+export type AcuraTrims =
+	| 'A-Spec'
+	| 'Type S'
+
+export type AudiModels =
+	| 'SQ8 e-tron'
+	| 'SQ6 e-tron'
+	| 'Q8 e-tron'
+	| 'Q6 e-tron'
+	| 'Q4 e-tron'
+	| 'A6 e-tron'
+	| 'e-tron GT'
+export type AudiYears =
+	| '2025'
+	| '2024'
+	| '2023'
+	| '2022'
+	| '2021'
+	| '2020'
+	| '2019'
+export type AudiTrims =
+	| 'Premium'
+	| 'Premium 40'
+	| 'Premium Plus 40'
+	| 'Premium 50'
+	| 'Premium Plus 50'
+	| 'Premium 55'
+	| 'Premium Plus 55'
+	| 'Premium Plus'
+	| 'Premium Plus Sportback'
+	| 'Prestige'
+	| 'Prestige 50'
+	| 'Prestige 55'
+	| 'Prestige Sportback'
+	| 'Sportback Premium'
+	| 'Sportback Premium 50'
+	| 'Sportback Premium 55'
+	| 'Sportback Premium Plus'
+	| 'Sportback Premium Plus 50'
+	| 'Sportback Premium Plus 55'
+	| 'Sportback Prestige'
+	| 'Sportback Prestige 50'
+	| 'Sportback Prestige 55'
+	| 'e-tron'
+	| 'Chronos Edition'
+	| 'RS'
+
+export type AfeelaModels =
+	|'EV Sedan'
+export type AfeelaYears =
+	| '2026'
+export type AfeelaTrims =
+	| 'Base'
+
 export type CarYearsType =
 	| RivianYears
 	| TeslaYears
@@ -986,6 +1331,21 @@ export type CarYearsType =
 	| KiaYears
 	| JeepYears
 	| JaguaYears
+	| HondaYears
+	| GMCYears
+	| GenesisYears
+	| FiskerYears
+	| FiatYears
+	| DodgeYears
+	| ChryslerYears
+	| ChevroletYears
+	| CadillacYears
+	| BytonYears
+	| BuickYears
+	| BMWYears
+	| AcuraYears
+	| AudiYears
+	| AfeelaYears
 	| "none";
 export type CarModelsType =
 	| RivianModels
@@ -1021,6 +1381,21 @@ export type CarModelsType =
 	| KiaModels
 	| JeepModels
 	| JaguaModels
+	| HondaModels
+	| GMCModels
+	| GenesisModels
+	| FiskerModels
+	| FiatModels
+	| DodgeModels
+	| ChryslerModels
+	| ChevroletModels
+	| CadillacModels
+	| BytonModels
+	| BuickModels
+	| BMWModels
+	| AcuraModels
+	| AudiModels
+	| AfeelaModels
 	| "none";
 export type CarTrimType =
 	| RivianTrims
@@ -1056,6 +1431,21 @@ export type CarTrimType =
 	| KiaTrims
 	| JeepTrims
 	| JaguaTrims
+	| HondaTrims
+	| GMCTrims
+	| GenesisTrims
+	| FiskerTrims
+	| FiatTrims
+	| DodgeTrims
+	| ChryslerTrims
+	| ChevroletTrims
+	| CadillacTrims
+	| BytonTrims
+	| BuickTrims
+	| BMWTrims
+	| AcuraTrims
+	| AudiTrims
+	| AfeelaTrims
 	| "none";
 
 
@@ -1212,6 +1602,81 @@ export type JeepModelYearTrims = {
 export type JaguaModelYearTrims = {
 	year: JaguaYears;
 	trims: JaguaTrims[];
+}
+
+export type HondaModelYearTrims = {
+	year: HondaYears;
+	trims: HondaTrims[];
+}
+
+export type GMCModelYearTrims = {
+	year: GMCYears;
+	trims: GMCTrims[];
+}
+
+export type GenesisModelYearTrims = {
+	year: GenesisYears;
+	trims: GenesisTrims[];
+}
+
+export type FiskerModelYearTrims = {
+	year: FiskerYears;
+	trims: FiskerTrims[];
+}
+
+export type FiatModelYearTrims = {
+	year: FiatYears;
+	trims: FiatTrims[];
+}
+
+export type DodgeModelYearTrims = {
+	year: DodgeYears;
+	trims: DodgeTrims[];
+}
+
+export type ChryslerModelYearTrims = {
+	year: ChryslerYears;
+	trims: ChryslerTrims[];
+}
+
+export type ChevroletModelYearTrims = {
+	year: ChevroletYears;
+	trims: ChevroletTrims[];
+}
+
+export type CadillacModelYearTrims = {
+	year: CadillacYears;
+	trims: CadillacTrims[];
+}
+
+export type BytonModelYearTrims = {
+	year: BytonYears;
+	trims: BytonTrims[];
+}
+
+export type BuickModelYearTrims = {
+	year: BuickYears;
+	trims: BuickTrims[];
+}
+
+export type BMWModelYearTrims = {
+	year: BMWYears;
+	trims: BMWTrims[];
+}
+
+export type AcuraModelYearTrims = {
+	year: AcuraYears;
+	trims: AcuraTrims[];
+}
+
+export type AudiModelYearTrims = {
+	year: AudiYears;
+	trims: AudiTrims[];
+}
+
+export type AfeelaModelYearTrims = {
+	year: AfeelaYears;
+	trims: AfeelaTrims[];
 }
 
 /**ModelsItems*/
@@ -1382,6 +1847,82 @@ export type JaguaModelsItem = {
 	yearTrims: JaguaModelYearTrims[];
 };
 
+export type HondaModelsItem = {
+	model: HondaModels;
+	yearTrims: HondaModelYearTrims[];
+};
+
+export type GMCModelsItem = {
+	model: GMCModels;
+	yearTrims: GMCModelYearTrims[];
+};
+
+export type GenesisModelsItem = {
+	model: GenesisModels;
+	yearTrims: GenesisModelYearTrims[];
+};
+
+export type FiskerModelsItem = {
+	model: FiskerModels;
+	yearTrims: FiskerModelYearTrims[];
+};
+
+export type FiatModelsItem = {
+	model: FiatModels;
+	yearTrims: FiatModelYearTrims[];
+};
+
+export type DodgeModelsItem = {
+	model: DodgeModels;
+	yearTrims: DodgeModelYearTrims[];
+};
+
+export type ChryslerModelsItem = {
+	model: ChryslerModels;
+	yearTrims: ChryslerModelYearTrims[];
+};
+
+export type ChevroletModelsItem = {
+	model: ChevroletModels;
+	yearTrims: ChevroletModelYearTrims[];
+};
+
+export type CadillacModelsItem = {
+	model: CadillacModels;
+	yearTrims: CadillacModelYearTrims[];
+};
+
+export type BytonModelsItem = {
+	model: BytonModels;
+	yearTrims: BytonModelYearTrims[];
+}
+
+export type BuickModelsItem = {
+	model: BuickModels;
+	yearTrims: BuickModelYearTrims[];
+}
+
+export type BMWModelsItem = {
+	model: BMWModels;
+	yearTrims: BMWModelYearTrims[];
+}
+
+export type AcuraModelsItem = {
+	model: AcuraModels;
+	yearTrims: AcuraModelYearTrims[];
+}
+
+export type AudiModelsItem = {
+	model: AudiModels;
+	yearTrims: AudiModelYearTrims[];
+}
+
+export type AfeelaModlesItem = {
+	model: AfeelaModels;
+	yearTrims: AfeelaModelYearTrims[];
+}
+
+
 export type CarModelsArray =
 	| FordModelsItem[]
 	| HyundaiModelsItem[]
@@ -1415,7 +1956,22 @@ export type CarModelsArray =
 	| LamborghiniModelsItem[]
 	| KiaModelsItem[]
 	| JeepModelsItem[]
-	| JaguaModelsItem[];
+	| JaguaModelsItem[]
+	| HondaModelsItem[]
+	| GMCModelsItem[]
+	| GenesisModelsItem[]
+	| FiskerModelsItem[]
+	| FiatModelsItem[]
+	| DodgeModelsItem[]
+	| ChryslerModelsItem[]
+	| CadillacModelsItem[]
+	| BytonModelsItem[]
+	| BuickModelsItem[]
+	| ChevroletModelsItem[]
+	| BMWModelsItem[]
+	| AcuraModelsItem[]
+	| AudiModelsItem[]
+	| AfeelaModlesItem[];
 
 export type CarMakeModelsForInputItems = {
 	label: CarModelsType;
