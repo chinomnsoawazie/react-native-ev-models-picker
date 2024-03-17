@@ -1,6 +1,20 @@
 import {
 	fordModels,
 	hyundaiModels,
+	jaguarModels,
+	jeepModels,
+	kiaModels,
+	lamborghiniModels,
+	landRoverModels,
+	lexusModels,
+	lincolnModels,
+	lordstownModels,
+	lotusModels,
+	lucidModels,
+	maseratiModels,
+	mazdaModels,
+	mercedesAMGModels,
+	mercedesBenzModels,
 	mercedesMaybachModels,
 	miniModels,
 	mitsubishiModels,
@@ -95,6 +109,48 @@ const getMakeModels = (x: GetMakeModelsProps): CarMakeModelsForInputItems[] => {
 		
 		case 'Mercedes-Maybach':
 			return getMakeModelsHelper({currentModels: mercedesMaybachModels});
+		
+		case 'Mercedes-Benz':
+			return getMakeModelsHelper({currentModels: mercedesBenzModels});
+		
+		case 'Mercedes-AMG':
+			return getMakeModelsHelper({currentModels: mercedesAMGModels});
+		
+		case 'Mazda':
+			return getMakeModelsHelper({currentModels: mazdaModels});
+		
+		case 'Maserati':
+			return getMakeModelsHelper({currentModels: maseratiModels});
+		
+		case "Lucid":
+			return getMakeModelsHelper({currentModels: lucidModels});
+		
+		case 'Lotus':
+			return getMakeModelsHelper({currentModels: lotusModels});
+		
+		case 'Lordstown':
+			return getMakeModelsHelper({currentModels: lordstownModels});
+		
+		case 'Lincoln':
+			return getMakeModelsHelper({currentModels: lincolnModels});
+		
+		case 'Lexus':
+			return getMakeModelsHelper({currentModels: lexusModels});
+		
+		case 'Land Rover':
+			return getMakeModelsHelper({currentModels: landRoverModels});
+		
+		case 'Lamborghini':
+			return getMakeModelsHelper({currentModels: lamborghiniModels});
+		
+		case 'Kia':
+			return getMakeModelsHelper({currentModels: kiaModels});
+		
+		case 'Jeep':
+			return getMakeModelsHelper({currentModels: jeepModels});
+		
+		case 'Jaguar':
+			return getMakeModelsHelper({currentModels: jaguarModels});
 		
 		case "Others":
 		default:
