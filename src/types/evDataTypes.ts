@@ -1985,3 +1985,10 @@ export type CarTrimsForInputType = {
 	label: CarTrimType;
 	value: CarTrimType;
 };
+
+export type Car = {
+	make: CarMake;
+	model: CarModelsType;
+	year: CarYearsType;
+	trim: CarTrimType;
+}

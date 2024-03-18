@@ -11,8 +11,10 @@ import {ColorValue} from "react-native/Libraries/StyleSheet/StyleSheet";
 import {TextStyle} from "react-native/Libraries/StyleSheet/StyleSheetTypes";
 import {getMakeModels, getModelYears, getYearTrims, translations} from "./helpers";
 import {
+	Car,
 	CarMake,
 	CarModelsType,
+	CarTrimType,
 	CarYearsType,
 	ComponentInputItems,
 	evMakes,
@@ -23,7 +25,7 @@ type PackageDropDownTypes = {
 	disabled?: boolean;
 	listMode?: "MODAL" | "SCROLLVIEW";
 	optionsLevel?: 'CarMake' | 'CarModel' | 'CarYear' | 'CarTrim'
-	onValueChange: (p: any) => void;
+	onValueChange: (p: Car) => void;
 	onCarMakeOpen?: () => void;
 	onCarMakeClose?: () => void;
 	onCarModelOpen?: () => void;
@@ -83,10 +85,13 @@ const EVSelector = (x: PackageDropDownTypes) => {
 		carYears: [],
 		carModels: []
 	});
-	const [carModel, setCarModel] = useState<CarModelsType>("none");
+	
+	
 	const [carMake, setCarMake] = useState<CarMake>("none");
+	const [carModel, setCarModel] = useState<CarModelsType>("none");
 	const [carYear, setCarYear] = useState<CarYearsType>("none");
-	const [carTrim, setCarTrim] = useState<CarYearsType>("none");
+	const [carTrim, setCarTrim] = useState<CarTrimType>("none");
+	
 	const {carTrims, carYears, carModels} = componentItems;
 	const [openStates, setOpenStates] = useState({
 		carMakeOpen: false,
@@ -98,59 +103,36 @@ const EVSelector = (x: PackageDropDownTypes) => {
 	
 	
 	useEffect(() => {
-		const CarItem = {
-			carMake: carMake,
-			carModel: carModel,
-			carYear: carYear,
-			carTrim: carTrim
-		};
 		const returnedCarModels = getMakeModels({carMake: carMake});
 		setComponentItems((e) => ({...e, carModels: returnedCarModels}));
-		onValueChange(CarItem);
-	}, [carMake, carModel, carYear, carTrim]);
-	
-	useEffect(() => {
-		const CarItem = {
-			carMake: carMake,
-			carModel: carModel,
-			carYear: carYear,
-			carTrim: carTrim
-		};
-		const returnedCarModels = getMakeModels({carMake: carMake});
-		setComponentItems((e) => ({...e, carModels: returnedCarModels}));
-		onValueChange(CarItem);
 	}, [carMake]);
 	
 	useEffect(() => {
-		const CarItem = {
-			carMake: carMake,
-			carModel: carModel,
-			carYear: carYear,
-			carTrim: carTrim
-		};
 		const carModelYears = getModelYears({
 			make: carMake,
 			model: carModel
 		});
 		setComponentItems((e) => ({...e, carYears: carModelYears}));
-		onValueChange(CarItem);
 	}, [carModel]);
 	
 	useEffect(() => {
-		const CarItem = {
+		const yearTrims = getYearTrims({
 			carMake: carMake,
 			carModel: carModel,
-			carYear: carYear,
-			carTrim: carTrim
-		};
-		const yearTrims = getYearTrims({
-			carMake: carMake as CarMake,
-			carModel: carModel as CarModelsType,
 			carYear: carYear
 		});
 		setComponentItems((e) => ({...e, carTrims: yearTrims}));
-		onValueChange(CarItem);
 	}, [carYear]);
+	
+	useEffect(() => {
+		const CarItem: Car = {
+			make: carMake,
+			model: carModel,
+			year: carYear,
+			trim: carTrim
+		};
+		onValueChange(CarItem);
+	}, [carMake, carModel, carYear, carTrim]);
 	
 	const {
 		carMake: carMakeText,
